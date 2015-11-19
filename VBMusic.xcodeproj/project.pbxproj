@@ -10,7 +10,6 @@
 		A213B5411BFE222D004E464A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A213B5401BFE222D004E464A /* main.m */; };
 		A213B5441BFE222D004E464A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A213B5431BFE222D004E464A /* AppDelegate.m */; };
 		A213B5471BFE222D004E464A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A213B5461BFE222D004E464A /* ViewController.m */; };
-		A213B54A1BFE222D004E464A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A213B5481BFE222D004E464A /* Main.storyboard */; };
 		A213B54C1BFE222D004E464A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A213B54B1BFE222D004E464A /* Assets.xcassets */; };
 		A213B54F1BFE222D004E464A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A213B54D1BFE222D004E464A /* LaunchScreen.storyboard */; };
 		A213B55A1BFE222D004E464A /* VBMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A213B5591BFE222D004E464A /* VBMusicTests.m */; };
@@ -41,7 +40,6 @@
 		A213B5431BFE222D004E464A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A213B5451BFE222D004E464A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A213B5461BFE222D004E464A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A213B5491BFE222D004E464A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A213B54B1BFE222D004E464A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A213B54E1BFE222D004E464A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A213B5501BFE222D004E464A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +49,9 @@
 		A213B5601BFE222D004E464A /* VBMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VBMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A213B5641BFE222D004E464A /* VBMusicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBMusicUITests.m; sourceTree = "<group>"; };
 		A213B5661BFE222D004E464A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A213B5781BFE26D1004E464A /* ModelHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelHeaders.h; sourceTree = "<group>"; };
+		A213B5791BFE28FF004E464A /* VBMusic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VBMusic-Prefix.pch"; sourceTree = "<group>"; };
+		A213B57B1BFE2A8F004E464A /* CommonDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDef.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +102,14 @@
 		A213B53E1BFE222D004E464A /* VBMusic */ = {
 			isa = PBXGroup;
 			children = (
+				A213B5761BFE2516004E464A /* UI */,
+				A213B5721BFE2516004E464A /* 3rd */,
+				A213B5731BFE2516004E464A /* Managers */,
+				A213B5751BFE2516004E464A /* Models */,
 				A213B5421BFE222D004E464A /* AppDelegate.h */,
 				A213B5431BFE222D004E464A /* AppDelegate.m */,
 				A213B5451BFE222D004E464A /* ViewController.h */,
 				A213B5461BFE222D004E464A /* ViewController.m */,
-				A213B5481BFE222D004E464A /* Main.storyboard */,
 				A213B54B1BFE222D004E464A /* Assets.xcassets */,
 				A213B54D1BFE222D004E464A /* LaunchScreen.storyboard */,
 				A213B5501BFE222D004E464A /* Info.plist */,
@@ -118,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				A213B5401BFE222D004E464A /* main.m */,
+				A213B5791BFE28FF004E464A /* VBMusic-Prefix.pch */,
+				A213B57B1BFE2A8F004E464A /* CommonDef.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +144,51 @@
 				A213B5661BFE222D004E464A /* Info.plist */,
 			);
 			path = VBMusicUITests;
+			sourceTree = "<group>";
+		};
+		A213B5721BFE2516004E464A /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		A213B5731BFE2516004E464A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A213B5741BFE2516004E464A /* HttpManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A213B5741BFE2516004E464A /* HttpManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HttpManager;
+			sourceTree = "<group>";
+		};
+		A213B5751BFE2516004E464A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A213B5781BFE26D1004E464A /* ModelHeaders.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A213B5761BFE2516004E464A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A213B5771BFE2516004E464A /* Base */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A213B5771BFE2516004E464A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +296,6 @@
 			files = (
 				A213B54F1BFE222D004E464A /* LaunchScreen.storyboard in Resources */,
 				A213B54C1BFE222D004E464A /* Assets.xcassets in Resources */,
-				A213B54A1BFE222D004E464A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +358,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A213B5481BFE222D004E464A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A213B5491BFE222D004E464A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A213B54D1BFE222D004E464A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,6 +455,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VBMusic/VBMusic-Prefix.pch";
 				INFOPLIST_FILE = VBMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VisionBao.VBMusic;
@@ -424,6 +468,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VBMusic/VBMusic-Prefix.pch";
 				INFOPLIST_FILE = VBMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VisionBao.VBMusic;
@@ -498,6 +544,7 @@
 				A213B56B1BFE222D004E464A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A213B56C1BFE222D004E464A /* Build configuration list for PBXNativeTarget "VBMusicTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +553,7 @@
 				A213B56E1BFE222D004E464A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A213B56F1BFE222D004E464A /* Build configuration list for PBXNativeTarget "VBMusicUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +562,7 @@
 				A213B5711BFE222D004E464A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
