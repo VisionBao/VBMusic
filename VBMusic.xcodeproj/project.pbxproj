@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A213B5411BFE222D004E464A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A213B5401BFE222D004E464A /* main.m */; };
+		A213B5441BFE222D004E464A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A213B5431BFE222D004E464A /* AppDelegate.m */; };
+		A213B5471BFE222D004E464A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A213B5461BFE222D004E464A /* ViewController.m */; };
+		A213B54A1BFE222D004E464A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A213B5481BFE222D004E464A /* Main.storyboard */; };
+		A213B54C1BFE222D004E464A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A213B54B1BFE222D004E464A /* Assets.xcassets */; };
+		A213B54F1BFE222D004E464A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A213B54D1BFE222D004E464A /* LaunchScreen.storyboard */; };
+		A213B55A1BFE222D004E464A /* VBMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A213B5591BFE222D004E464A /* VBMusicTests.m */; };
+		A213B5651BFE222D004E464A /* VBMusicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A213B5641BFE222D004E464A /* VBMusicUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A213B5561BFE222D004E464A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A213B5341BFE222D004E464A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A213B53B1BFE222D004E464A;
+			remoteInfo = VBMusic;
+		};
+		A213B5611BFE222D004E464A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A213B5341BFE222D004E464A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A213B53B1BFE222D004E464A;
+			remoteInfo = VBMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A213B53C1BFE222D004E464A /* VBMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VBMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A213B5401BFE222D004E464A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A213B5421BFE222D004E464A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A213B5431BFE222D004E464A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A213B5451BFE222D004E464A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A213B5461BFE222D004E464A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A213B5491BFE222D004E464A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A213B54B1BFE222D004E464A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A213B54E1BFE222D004E464A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A213B5501BFE222D004E464A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A213B5551BFE222D004E464A /* VBMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VBMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A213B5591BFE222D004E464A /* VBMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBMusicTests.m; sourceTree = "<group>"; };
+		A213B55B1BFE222D004E464A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A213B5601BFE222D004E464A /* VBMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VBMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A213B5641BFE222D004E464A /* VBMusicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBMusicUITests.m; sourceTree = "<group>"; };
+		A213B5661BFE222D004E464A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A213B5391BFE222D004E464A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A213B5521BFE222D004E464A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A213B55D1BFE222D004E464A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A213B5331BFE222D004E464A = {
+			isa = PBXGroup;
+			children = (
+				A213B53E1BFE222D004E464A /* VBMusic */,
+				A213B5581BFE222D004E464A /* VBMusicTests */,
+				A213B5631BFE222D004E464A /* VBMusicUITests */,
+				A213B53D1BFE222D004E464A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A213B53D1BFE222D004E464A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A213B53C1BFE222D004E464A /* VBMusic.app */,
+				A213B5551BFE222D004E464A /* VBMusicTests.xctest */,
+				A213B5601BFE222D004E464A /* VBMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A213B53E1BFE222D004E464A /* VBMusic */ = {
+			isa = PBXGroup;
+			children = (
+				A213B5421BFE222D004E464A /* AppDelegate.h */,
+				A213B5431BFE222D004E464A /* AppDelegate.m */,
+				A213B5451BFE222D004E464A /* ViewController.h */,
+				A213B5461BFE222D004E464A /* ViewController.m */,
+				A213B5481BFE222D004E464A /* Main.storyboard */,
+				A213B54B1BFE222D004E464A /* Assets.xcassets */,
+				A213B54D1BFE222D004E464A /* LaunchScreen.storyboard */,
+				A213B5501BFE222D004E464A /* Info.plist */,
+				A213B53F1BFE222D004E464A /* Supporting Files */,
+			);
+			path = VBMusic;
+			sourceTree = "<group>";
+		};
+		A213B53F1BFE222D004E464A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A213B5401BFE222D004E464A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A213B5581BFE222D004E464A /* VBMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				A213B5591BFE222D004E464A /* VBMusicTests.m */,
+				A213B55B1BFE222D004E464A /* Info.plist */,
+			);
+			path = VBMusicTests;
+			sourceTree = "<group>";
+		};
+		A213B5631BFE222D004E464A /* VBMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A213B5641BFE222D004E464A /* VBMusicUITests.m */,
+				A213B5661BFE222D004E464A /* Info.plist */,
+			);
+			path = VBMusicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A213B53B1BFE222D004E464A /* VBMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A213B5691BFE222D004E464A /* Build configuration list for PBXNativeTarget "VBMusic" */;
+			buildPhases = (
+				A213B5381BFE222D004E464A /* Sources */,
+				A213B5391BFE222D004E464A /* Frameworks */,
+				A213B53A1BFE222D004E464A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VBMusic;
+			productName = VBMusic;
+			productReference = A213B53C1BFE222D004E464A /* VBMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A213B5541BFE222D004E464A /* VBMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A213B56C1BFE222D004E464A /* Build configuration list for PBXNativeTarget "VBMusicTests" */;
+			buildPhases = (
+				A213B5511BFE222D004E464A /* Sources */,
+				A213B5521BFE222D004E464A /* Frameworks */,
+				A213B5531BFE222D004E464A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A213B5571BFE222D004E464A /* PBXTargetDependency */,
+			);
+			name = VBMusicTests;
+			productName = VBMusicTests;
+			productReference = A213B5551BFE222D004E464A /* VBMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A213B55F1BFE222D004E464A /* VBMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A213B56F1BFE222D004E464A /* Build configuration list for PBXNativeTarget "VBMusicUITests" */;
+			buildPhases = (
+				A213B55C1BFE222D004E464A /* Sources */,
+				A213B55D1BFE222D004E464A /* Frameworks */,
+				A213B55E1BFE222D004E464A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A213B5621BFE222D004E464A /* PBXTargetDependency */,
+			);
+			name = VBMusicUITests;
+			productName = VBMusicUITests;
+			productReference = A213B5601BFE222D004E464A /* VBMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A213B5341BFE222D004E464A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = VisionBao;
+				TargetAttributes = {
+					A213B53B1BFE222D004E464A = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					A213B5541BFE222D004E464A = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = A213B53B1BFE222D004E464A;
+					};
+					A213B55F1BFE222D004E464A = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = A213B53B1BFE222D004E464A;
+					};
+				};
+			};
+			buildConfigurationList = A213B5371BFE222D004E464A /* Build configuration list for PBXProject "VBMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A213B5331BFE222D004E464A;
+			productRefGroup = A213B53D1BFE222D004E464A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A213B53B1BFE222D004E464A /* VBMusic */,
+				A213B5541BFE222D004E464A /* VBMusicTests */,
+				A213B55F1BFE222D004E464A /* VBMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A213B53A1BFE222D004E464A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A213B54F1BFE222D004E464A /* LaunchScreen.storyboard in Resources */,
+				A213B54C1BFE222D004E464A /* Assets.xcassets in Resources */,
+				A213B54A1BFE222D004E464A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A213B5531BFE222D004E464A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A213B55E1BFE222D004E464A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A213B5381BFE222D004E464A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A213B5471BFE222D004E464A /* ViewController.m in Sources */,
+				A213B5441BFE222D004E464A /* AppDelegate.m in Sources */,
+				A213B5411BFE222D004E464A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A213B5511BFE222D004E464A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A213B55A1BFE222D004E464A /* VBMusicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A213B55C1BFE222D004E464A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A213B5651BFE222D004E464A /* VBMusicUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A213B5571BFE222D004E464A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A213B53B1BFE222D004E464A /* VBMusic */;
+			targetProxy = A213B5561BFE222D004E464A /* PBXContainerItemProxy */;
+		};
+		A213B5621BFE222D004E464A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A213B53B1BFE222D004E464A /* VBMusic */;
+			targetProxy = A213B5611BFE222D004E464A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A213B5481BFE222D004E464A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A213B5491BFE222D004E464A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A213B54D1BFE222D004E464A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A213B54E1BFE222D004E464A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A213B5671BFE222D004E464A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A213B5681BFE222D004E464A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A213B56A1BFE222D004E464A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VBMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VisionBao.VBMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A213B56B1BFE222D004E464A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VBMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VisionBao.VBMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A213B56D1BFE222D004E464A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VBMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VisionBao.VBMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VBMusic.app/VBMusic";
+			};
+			name = Debug;
+		};
+		A213B56E1BFE222D004E464A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VBMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VisionBao.VBMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VBMusic.app/VBMusic";
+			};
+			name = Release;
+		};
+		A213B5701BFE222D004E464A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VBMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VisionBao.VBMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VBMusic;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A213B5711BFE222D004E464A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VBMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VisionBao.VBMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VBMusic;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A213B5371BFE222D004E464A /* Build configuration list for PBXProject "VBMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A213B5671BFE222D004E464A /* Debug */,
+				A213B5681BFE222D004E464A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A213B5691BFE222D004E464A /* Build configuration list for PBXNativeTarget "VBMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A213B56A1BFE222D004E464A /* Debug */,
+				A213B56B1BFE222D004E464A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A213B56C1BFE222D004E464A /* Build configuration list for PBXNativeTarget "VBMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A213B56D1BFE222D004E464A /* Debug */,
+				A213B56E1BFE222D004E464A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A213B56F1BFE222D004E464A /* Build configuration list for PBXNativeTarget "VBMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A213B5701BFE222D004E464A /* Debug */,
+				A213B5711BFE222D004E464A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A213B5341BFE222D004E464A /* Project object */;
+}
