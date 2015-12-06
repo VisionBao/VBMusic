@@ -9,6 +9,9 @@
 #ifndef CommonDef_h
 #define CommonDef_h
 
+#import "VBLog.h"
+
+
 #import "ModelHeaders.h"
 
 #endif /* CommonDef_h */

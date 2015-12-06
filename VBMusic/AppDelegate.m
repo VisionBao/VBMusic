@@ -18,11 +18,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //     Override point for customization after application launch.
+
+#ifdef DEBUG
+    [VBLog setLevel:VBLogLevelVerbose];
+#else
+    [VBLog setLevel:VBLogLevelOff];
+#endif
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     ViewController * rootCtrl = [[ViewController alloc]init];
     self.window.rootViewController = rootCtrl;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

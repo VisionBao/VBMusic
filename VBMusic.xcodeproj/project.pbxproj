@@ -10,11 +10,14 @@
 		6ABD734F167B92ADF9CA72AC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D40C75E492E7E661FB20CA /* libPods.a */; };
 		A213B5411BFE222D004E464A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A213B5401BFE222D004E464A /* main.m */; };
 		A213B5441BFE222D004E464A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A213B5431BFE222D004E464A /* AppDelegate.m */; };
-		A213B5471BFE222D004E464A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A213B5461BFE222D004E464A /* ViewController.m */; };
 		A213B54C1BFE222D004E464A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A213B54B1BFE222D004E464A /* Assets.xcassets */; };
 		A213B54F1BFE222D004E464A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A213B54D1BFE222D004E464A /* LaunchScreen.storyboard */; };
 		A213B55A1BFE222D004E464A /* VBMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A213B5591BFE222D004E464A /* VBMusicTests.m */; };
 		A213B5651BFE222D004E464A /* VBMusicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A213B5641BFE222D004E464A /* VBMusicUITests.m */; };
+		A22973991C130F4900C31F6A /* VBHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A22973981C130F4900C31F6A /* VBHTTPManager.m */; };
+		A239378C1BFECECB0013A3A2 /* VBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A239378B1BFECECB0013A3A2 /* VBObject.m */; };
+		A239378F1BFECF710013A3A2 /* VBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = A239378E1BFECF710013A3A2 /* VBLog.m */; };
+		A23937921BFF20CB0013A3A2 /* VBMusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A23937911BFF20CB0013A3A2 /* VBMusicModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +43,6 @@
 		A213B5401BFE222D004E464A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A213B5421BFE222D004E464A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A213B5431BFE222D004E464A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A213B5451BFE222D004E464A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A213B5461BFE222D004E464A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A213B54B1BFE222D004E464A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A213B54E1BFE222D004E464A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A213B5501BFE222D004E464A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +55,14 @@
 		A213B5781BFE26D1004E464A /* ModelHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelHeaders.h; sourceTree = "<group>"; };
 		A213B5791BFE28FF004E464A /* VBMusic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VBMusic-Prefix.pch"; sourceTree = "<group>"; };
 		A213B57B1BFE2A8F004E464A /* CommonDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDef.h; sourceTree = "<group>"; };
+		A22973971C130F4900C31F6A /* VBHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBHTTPManager.h; sourceTree = "<group>"; };
+		A22973981C130F4900C31F6A /* VBHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBHTTPManager.m; sourceTree = "<group>"; };
+		A239378A1BFECECB0013A3A2 /* VBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBObject.h; sourceTree = "<group>"; };
+		A239378B1BFECECB0013A3A2 /* VBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBObject.m; sourceTree = "<group>"; };
+		A239378D1BFECF710013A3A2 /* VBLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBLog.h; sourceTree = "<group>"; };
+		A239378E1BFECF710013A3A2 /* VBLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBLog.m; sourceTree = "<group>"; };
+		A23937901BFF20CB0013A3A2 /* VBMusicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBMusicModel.h; sourceTree = "<group>"; };
+		A23937911BFF20CB0013A3A2 /* VBMusicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBMusicModel.m; sourceTree = "<group>"; };
 		A94F87C86D09779FFBC72C8C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F1D40C75E492E7E661FB20CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -119,13 +128,12 @@
 			isa = PBXGroup;
 			children = (
 				A213B5761BFE2516004E464A /* UI */,
-				A213B5721BFE2516004E464A /* 3rd */,
 				A213B5731BFE2516004E464A /* Managers */,
 				A213B5751BFE2516004E464A /* Models */,
+				A213B5721BFE2516004E464A /* 3rd */,
+				A23937871BFECE790013A3A2 /* VBFrameworks */,
 				A213B5421BFE222D004E464A /* AppDelegate.h */,
 				A213B5431BFE222D004E464A /* AppDelegate.m */,
-				A213B5451BFE222D004E464A /* ViewController.h */,
-				A213B5461BFE222D004E464A /* ViewController.m */,
 				A213B54B1BFE222D004E464A /* Assets.xcassets */,
 				A213B54D1BFE222D004E464A /* LaunchScreen.storyboard */,
 				A213B5501BFE222D004E464A /* Info.plist */,
@@ -172,22 +180,17 @@
 		A213B5731BFE2516004E464A /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				A213B5741BFE2516004E464A /* HttpManager */,
+				A22973951C130F3100C31F6A /* HTTPManager */,
 			);
 			path = Managers;
-			sourceTree = "<group>";
-		};
-		A213B5741BFE2516004E464A /* HttpManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HttpManager;
 			sourceTree = "<group>";
 		};
 		A213B5751BFE2516004E464A /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				A213B5781BFE26D1004E464A /* ModelHeaders.h */,
+				A23937901BFF20CB0013A3A2 /* VBMusicModel.h */,
+				A23937911BFF20CB0013A3A2 /* VBMusicModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,6 +208,50 @@
 			children = (
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		A22973951C130F3100C31F6A /* HTTPManager */ = {
+			isa = PBXGroup;
+			children = (
+				A22973961C130F3100C31F6A /* VBHTTPManager */,
+			);
+			path = HTTPManager;
+			sourceTree = "<group>";
+		};
+		A22973961C130F3100C31F6A /* VBHTTPManager */ = {
+			isa = PBXGroup;
+			children = (
+				A22973971C130F4900C31F6A /* VBHTTPManager.h */,
+				A22973981C130F4900C31F6A /* VBHTTPManager.m */,
+			);
+			path = VBHTTPManager;
+			sourceTree = "<group>";
+		};
+		A23937871BFECE790013A3A2 /* VBFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A23937881BFECE790013A3A2 /* VBFoundation */,
+				A23937891BFECE790013A3A2 /* VBUI */,
+			);
+			path = VBFrameworks;
+			sourceTree = "<group>";
+		};
+		A23937881BFECE790013A3A2 /* VBFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				A239378A1BFECECB0013A3A2 /* VBObject.h */,
+				A239378B1BFECECB0013A3A2 /* VBObject.m */,
+				A239378D1BFECF710013A3A2 /* VBLog.h */,
+				A239378E1BFECF710013A3A2 /* VBLog.m */,
+			);
+			path = VBFoundation;
+			sourceTree = "<group>";
+		};
+		A23937891BFECE790013A3A2 /* VBUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VBUI;
 			sourceTree = "<group>";
 		};
 		F4350D99165B7AA9FADA043F /* Frameworks */ = {
@@ -395,9 +442,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A213B5471BFE222D004E464A /* ViewController.m in Sources */,
+				A239378C1BFECECB0013A3A2 /* VBObject.m in Sources */,
+				A23937921BFF20CB0013A3A2 /* VBMusicModel.m in Sources */,
+				A239378F1BFECF710013A3A2 /* VBLog.m in Sources */,
 				A213B5441BFE222D004E464A /* AppDelegate.m in Sources */,
 				A213B5411BFE222D004E464A /* main.m in Sources */,
+				A22973991C130F4900C31F6A /* VBHTTPManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
