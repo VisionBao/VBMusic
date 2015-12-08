@@ -7,12 +7,8 @@
 //
 
 #import "VBHTTPManager.h"
-#import <AFNetworking.h>
 
-@implementation VBHTTPManager{
-    AFHTTPRequestOperationManager *_requestOperationMgr;
-    AFNetworkReachabilityManager *_reachabilityManager;
-}
+@implementation VBHTTPManager
 
 + (id)defaultManager{
     static VBHTTPManager *httpManager = nil;
@@ -27,26 +23,28 @@
     if (self) {
         _requestOperationMgr = [AFHTTPRequestOperationManager manager];
         _reachabilityManager = [AFNetworkReachabilityManager sharedManager];
-        [_reachabilityManager startMonitoring];
     }
     return self;
 }
-- (void)getCurrentReachabilityStatusBlock:(void (^)(AFNetworkReachabilityStatus status))block{
+- (BOOL)checkNetworkStatus {
+    __block BOOL isNetworkUse = YES;
     [_reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         if (status == AFNetworkReachabilityStatusUnknown) {
             //未知
-        }
-        if (status == AFNetworkReachabilityStatusNotReachable) {
-            //无网络
-        }
-        if (status == AFNetworkReachabilityStatusReachableViaWWAN) {
-            //移动网络
-        }
-        if (status == AFNetworkReachabilityStatusReachableViaWiFi) {
+            isNetworkUse = YES;
+        } else if (status == AFNetworkReachabilityStatusReachableViaWiFi){
             //WiFi
-            
+            isNetworkUse = YES;
+        } else if (status == AFNetworkReachabilityStatusReachableViaWWAN){
+            //移动网络
+            isNetworkUse = YES;
+        } else if (status == AFNetworkReachabilityStatusNotReachable){
+            // 网络异常操作
+            isNetworkUse = NO;
         }
     }];
+    [_reachabilityManager startMonitoring];
+    return isNetworkUse;
 }
 - (void)get{
     _requestOperationMgr = [AFHTTPRequestOperationManager manager];
@@ -57,4 +55,80 @@
         NSLog(@"Error: %@", error);
     }];
 }
+/**
+ GET请求
+ */
++ (void)getRequest:(NSString *)url params:(NSDictionary *)params success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler{
+    if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
+        successHandler(nil);
+        failureHandler(nil);
+        return;
+    }
+    [[[VBHTTPManager defaultManager] requestOperationMgr] GET:url parameters:params success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+        successHandler(responseObject);
+    } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+        failureHandler(error);
+    }];
+}
+
+/**
+ POST请求
+ */
++ (void)postRequest:(NSString *)url params:(NSDictionary *)params success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler{
+    if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
+        successHandler(nil);
+        failureHandler(nil);
+        return;
+    }
+    [[[VBHTTPManager defaultManager] requestOperationMgr] POST:url parameters:params success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+        successHandler(responseObject);
+    } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+        failureHandler(error);
+    }];
+}
+
+/**
+ PUT请求
+ */
++ (void)putRequest:(NSString *)url params:(NSDictionary *)params success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler{
+    if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
+        successHandler(nil);
+        failureHandler(nil);
+        return;
+    }
+    [[[VBHTTPManager defaultManager] requestOperationMgr] PUT:url parameters:params success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+        successHandler(successHandler);
+    } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+        failureHandler(error);
+    }];
+}
+
+/**
+ DELETE请求
+ */
++ (void)deleteRequest:(NSString *)url params:(NSDictionary *)params success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler{
+    if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
+        successHandler(nil);
+        failureHandler(nil);
+        return;
+    }
+    [[[VBHTTPManager defaultManager] requestOperationMgr] DELETE:url parameters:params success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+        successHandler(responseObject);
+    } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+        failureHandler(error);
+    }];
+}
+
+/**
+ 下载文件，监听下载进度
+ */
++ (void)downloadRequest:(NSString *)url successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler{
+    if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
+        progressHandler(0, 0, 0);
+        completionHandler(nil, nil);
+        return;
+    }
+    
+}
+
 @end
