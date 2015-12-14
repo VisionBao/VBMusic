@@ -21,7 +21,7 @@
 - (id)init{
     self = [super init];
     if (self) {
-        _requestOperationMgr = [AFHTTPRequestOperationManager manager];
+        _sessionManager = [AFHTTPSessionManager manager];
         _reachabilityManager = [AFNetworkReachabilityManager sharedManager];
     }
     return self;
@@ -46,15 +46,7 @@
     [_reachabilityManager startMonitoring];
     return isNetworkUse;
 }
-- (void)get{
-    _requestOperationMgr = [AFHTTPRequestOperationManager manager];
-    _requestOperationMgr.responseSerializer = [AFJSONResponseSerializer serializerWithReadingOptions:NSJSONReadingMutableContainers];
-    [_requestOperationMgr GET:@"http://example.com/resources.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"JSON: %@", responseObject);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
-    }];
-}
+
 /**
  GET请求
  */
@@ -64,11 +56,19 @@
         failureHandler(nil);
         return;
     }
-    [[[VBHTTPManager defaultManager] requestOperationMgr] GET:url parameters:params success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+    
+    [[[VBHTTPManager defaultManager] sessionManager] GET:url parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         successHandler(responseObject);
-    } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failureHandler(error);
     }];
+//    [[[VBHTTPManager defaultManager] session] GET:url parameters:params success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+//        successHandler(responseObject);
+//    } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+//        failureHandler(error);
+//    }];
 }
 
 /**
@@ -80,9 +80,11 @@
         failureHandler(nil);
         return;
     }
-    [[[VBHTTPManager defaultManager] requestOperationMgr] POST:url parameters:params success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+    [[[VBHTTPManager defaultManager] sessionManager] GET:url parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         successHandler(responseObject);
-    } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failureHandler(error);
     }];
 }
@@ -96,9 +98,9 @@
         failureHandler(nil);
         return;
     }
-    [[[VBHTTPManager defaultManager] requestOperationMgr] PUT:url parameters:params success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+    [[[VBHTTPManager defaultManager] sessionManager] PUT:url parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         successHandler(successHandler);
-    } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failureHandler(error);
     }];
 }
@@ -112,9 +114,9 @@
         failureHandler(nil);
         return;
     }
-    [[[VBHTTPManager defaultManager] requestOperationMgr] DELETE:url parameters:params success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+    [[[VBHTTPManager defaultManager] sessionManager] DELETE:url parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         successHandler(responseObject);
-    } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failureHandler(error);
     }];
 }

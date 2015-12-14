@@ -30,7 +30,7 @@ typedef void (^progressBlock)(int64_t bytesWritten, int64_t totalBytesWritten, i
 
 @interface VBHTTPManager : NSObject
 
-@property (nonatomic, strong)AFHTTPRequestOperationManager *requestOperationMgr;
+@property (nonatomic, strong)AFHTTPSessionManager *sessionManager;
 @property (nonatomic, strong)AFNetworkReachabilityManager *reachabilityManager;
 
 + (id)defaultManager;

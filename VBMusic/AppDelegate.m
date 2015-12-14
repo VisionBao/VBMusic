@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -26,8 +26,8 @@
 #endif
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    ViewController * rootCtrl = [[ViewController alloc]init];
-    self.window.rootViewController = rootCtrl;
+//    ViewController * rootCtrl = [[ViewController alloc]init];
+//    self.window.rootViewController = rootCtrl;
     [self.window makeKeyAndVisible];
     
     return YES;
