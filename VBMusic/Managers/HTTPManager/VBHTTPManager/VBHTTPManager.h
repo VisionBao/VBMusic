@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <AFNetworking.h>
+@class VBFileConfig;
+
 /**
  请求成功block
  */
@@ -26,7 +28,7 @@ typedef void (^responseBlock)(id dataObj, NSError *error);
 /**
  监听进度响应block
  */
-typedef void (^progressBlock)(int64_t bytesWritten, int64_t totalBytesWritten, int64_t totalBytesExpectedToWrite);
+typedef void (^progressBlock)(int64_t bytesWritten, int64_t totalBytesWritten);
 
 @interface VBHTTPManager : NSObject
 
@@ -64,13 +66,14 @@ typedef void (^progressBlock)(int64_t bytesWritten, int64_t totalBytesWritten, i
  */
 + (void)downloadRequest:(NSString *)url successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler;
 
-///**
-// 文件上传
-// */
-//+ (void)updateRequest:(NSString *)url params:(NSDictionary *)params fileConfig:(XLFileConfig *)fileConfig success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler;
-//
-///**
-// 文件上传，监听上传进度
-// */
-//+ (void)updateRequest:(NSString *)url params:(NSDictionary *)params fileConfig:(XLFileConfig *)fileConfig successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler;
+/**
+ 文件上传
+ */
++ (void)updateRequest:(NSString *)url params:(NSDictionary *)params fileConfig:(VBFileConfig *)fileConfig success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler;
+
+/**
+ 文件上传，监听上传进度
+ */
++ (void)updateRequest:(NSString *)url params:(NSDictionary *)params fileConfig:(VBFileConfig *)fileConfig successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler;
 @end
+

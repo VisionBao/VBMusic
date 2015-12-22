@@ -7,6 +7,7 @@
 //
 
 #import "VBHTTPManager.h"
+#import "VBFileConfig.h"
 
 @implementation VBHTTPManager
 
@@ -126,11 +127,57 @@
  */
 + (void)downloadRequest:(NSString *)url successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler{
     if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
-        progressHandler(0, 0, 0);
+        progressHandler(0, 0);
         completionHandler(nil, nil);
         return;
     }
+    [[[VBHTTPManager defaultManager] sessionManager] GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        progressHandler(downloadProgress.completedUnitCount, downloadProgress.totalUnitCount);
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        completionHandler(responseObject, nil);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        completionHandler(nil, error);
+    }];
     
 }
+/**
+ 文件上传
+ */
++ (void)updateRequest:(NSString *)url params:(NSDictionary *)params fileConfig:(VBFileConfig *)fileConfig success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler{
+    if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
+        successHandler(nil);
+        failureHandler(nil);
+        return;
+    }
+    [[[VBHTTPManager defaultManager] sessionManager] POST:url parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        [formData appendPartWithFileData:fileConfig.fileData name:fileConfig.name fileName:fileConfig.fileName mimeType:fileConfig.mimeType];
+    } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        successHandler(responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        failureHandler(error);
+    }];
+}
 
+/**
+ 文件上传，监听上传进度
+ */
++ (void)updateRequest:(NSString *)url params:(NSDictionary *)params fileConfig:(VBFileConfig *)fileConfig successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler{
+    if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
+        progressHandler(0, 0);
+        completionHandler(nil, nil);
+        return;
+    }
+    [[[VBHTTPManager defaultManager] sessionManager] POST:url parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        [formData appendPartWithFileData:fileConfig.fileData name:fileConfig.name fileName:fileConfig.fileName mimeType:fileConfig.mimeType];
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
+        progressHandler(uploadProgress.completedUnitCount, uploadProgress.totalUnitCount);
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        completionHandler(responseObject, nil);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        completionHandler(nil, error);
+    }];
+}
 @end
+
+
+

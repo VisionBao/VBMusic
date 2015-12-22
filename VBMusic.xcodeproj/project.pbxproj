@@ -18,6 +18,7 @@
 		A239378C1BFECECB0013A3A2 /* VBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A239378B1BFECECB0013A3A2 /* VBObject.m */; };
 		A239378F1BFECF710013A3A2 /* VBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = A239378E1BFECF710013A3A2 /* VBLog.m */; };
 		A23937921BFF20CB0013A3A2 /* VBMusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A23937911BFF20CB0013A3A2 /* VBMusicModel.m */; };
+		A28A4B2C1C29486000CB0B58 /* VBFileConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B2B1C29486000CB0B58 /* VBFileConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		A239378E1BFECF710013A3A2 /* VBLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBLog.m; sourceTree = "<group>"; };
 		A23937901BFF20CB0013A3A2 /* VBMusicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBMusicModel.h; sourceTree = "<group>"; };
 		A23937911BFF20CB0013A3A2 /* VBMusicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBMusicModel.m; sourceTree = "<group>"; };
+		A28A4B2A1C29486000CB0B58 /* VBFileConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBFileConfig.h; sourceTree = "<group>"; };
+		A28A4B2B1C29486000CB0B58 /* VBFileConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBFileConfig.m; sourceTree = "<group>"; };
 		A94F87C86D09779FFBC72C8C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F1D40C75E492E7E661FB20CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -223,6 +226,8 @@
 			children = (
 				A22973971C130F4900C31F6A /* VBHTTPManager.h */,
 				A22973981C130F4900C31F6A /* VBHTTPManager.m */,
+				A28A4B2A1C29486000CB0B58 /* VBFileConfig.h */,
+				A28A4B2B1C29486000CB0B58 /* VBFileConfig.m */,
 			);
 			path = VBHTTPManager;
 			sourceTree = "<group>";
@@ -447,6 +452,7 @@
 				A239378F1BFECF710013A3A2 /* VBLog.m in Sources */,
 				A213B5441BFE222D004E464A /* AppDelegate.m in Sources */,
 				A213B5411BFE222D004E464A /* main.m in Sources */,
+				A28A4B2C1C29486000CB0B58 /* VBFileConfig.m in Sources */,
 				A22973991C130F4900C31F6A /* VBHTTPManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
