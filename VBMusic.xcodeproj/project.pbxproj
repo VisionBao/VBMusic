@@ -19,6 +19,8 @@
 		A239378F1BFECF710013A3A2 /* VBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = A239378E1BFECF710013A3A2 /* VBLog.m */; };
 		A23937921BFF20CB0013A3A2 /* VBMusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A23937911BFF20CB0013A3A2 /* VBMusicModel.m */; };
 		A28A4B2C1C29486000CB0B58 /* VBFileConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B2B1C29486000CB0B58 /* VBFileConfig.m */; };
+		A28A4B2F1C2A3D6300CB0B58 /* VBHttpUrlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B2E1C2A3D6300CB0B58 /* VBHttpUrlManager.m */; };
+		A28A4B361C2A425300CB0B58 /* VBHTTPErrorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B351C2A425300CB0B58 /* VBHTTPErrorManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,11 @@
 		A23937911BFF20CB0013A3A2 /* VBMusicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBMusicModel.m; sourceTree = "<group>"; };
 		A28A4B2A1C29486000CB0B58 /* VBFileConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBFileConfig.h; sourceTree = "<group>"; };
 		A28A4B2B1C29486000CB0B58 /* VBFileConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBFileConfig.m; sourceTree = "<group>"; };
+		A28A4B2D1C2A3D6300CB0B58 /* VBHttpUrlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBHttpUrlManager.h; sourceTree = "<group>"; };
+		A28A4B2E1C2A3D6300CB0B58 /* VBHttpUrlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBHttpUrlManager.m; sourceTree = "<group>"; };
+		A28A4B331C2A420F00CB0B58 /* VBHTTPHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBHTTPHelper.h; sourceTree = "<group>"; };
+		A28A4B341C2A425300CB0B58 /* VBHTTPErrorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBHTTPErrorManager.h; sourceTree = "<group>"; };
+		A28A4B351C2A425300CB0B58 /* VBHTTPErrorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBHTTPErrorManager.m; sourceTree = "<group>"; };
 		A94F87C86D09779FFBC72C8C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F1D40C75E492E7E661FB20CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -217,6 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				A22973961C130F3100C31F6A /* VBHTTPManager */,
+				A28A4B2D1C2A3D6300CB0B58 /* VBHttpUrlManager.h */,
+				A28A4B2E1C2A3D6300CB0B58 /* VBHttpUrlManager.m */,
 			);
 			path = HTTPManager;
 			sourceTree = "<group>";
@@ -224,8 +233,11 @@
 		A22973961C130F3100C31F6A /* VBHTTPManager */ = {
 			isa = PBXGroup;
 			children = (
+				A28A4B331C2A420F00CB0B58 /* VBHTTPHelper.h */,
 				A22973971C130F4900C31F6A /* VBHTTPManager.h */,
 				A22973981C130F4900C31F6A /* VBHTTPManager.m */,
+				A28A4B341C2A425300CB0B58 /* VBHTTPErrorManager.h */,
+				A28A4B351C2A425300CB0B58 /* VBHTTPErrorManager.m */,
 				A28A4B2A1C29486000CB0B58 /* VBFileConfig.h */,
 				A28A4B2B1C29486000CB0B58 /* VBFileConfig.m */,
 			);
@@ -450,6 +462,8 @@
 				A239378C1BFECECB0013A3A2 /* VBObject.m in Sources */,
 				A23937921BFF20CB0013A3A2 /* VBMusicModel.m in Sources */,
 				A239378F1BFECF710013A3A2 /* VBLog.m in Sources */,
+				A28A4B361C2A425300CB0B58 /* VBHTTPErrorManager.m in Sources */,
+				A28A4B2F1C2A3D6300CB0B58 /* VBHttpUrlManager.m in Sources */,
 				A213B5441BFE222D004E464A /* AppDelegate.m in Sources */,
 				A213B5411BFE222D004E464A /* main.m in Sources */,
 				A28A4B2C1C29486000CB0B58 /* VBFileConfig.m in Sources */,

@@ -12,84 +12,27 @@
 
 @end
 
-@implementation NSObject (YObject)
-- (void)performSelector:(SEL)aSelector afterDelay:(NSTimeInterval)delay withMultiObjects:(id)object, ...
-{
-    @autoreleasepool
-    {
-        NSMethodSignature* signature = [self methodSignatureForSelector:aSelector];
-        if (signature)
-        {
-            NSInvocation* invocation = [NSInvocation invocationWithMethodSignature:signature];
-            [invocation setTarget:self];
-            [invocation setSelector:aSelector];
-            
-            NSUInteger len = signature.numberOfArguments;
-            if (len > 2)
-            {
-                id value = object;
-                
-                va_list arguments;
-                va_start(arguments, object);
-                for (int i = 2; i < len; i++)
-                {
-                    [invocation setArgument:&value atIndex:i];
-                    if (value != nil)
-                    {
-                        value = va_arg(arguments, id);
-                    }
-                }
-                va_end(arguments);
-            }
-            
-            [invocation performSelector:@selector(invoke) withObject:nil afterDelay:delay];
-        }
-    }
-}
+@interface NSObject (VBObject)
 
-- (id)performSelector:(SEL)aSelector withMultiObjects:(id)object, ...
-{
-    id anObject = nil;
-    
-    @autoreleasepool
-    {
-        NSMethodSignature* signature = [self methodSignatureForSelector:aSelector];
-        
-        if (signature)
-        {
-            
-            NSInvocation* invocation = [NSInvocation invocationWithMethodSignature:signature];
-            
-            [invocation setTarget:self];
-            [invocation setSelector:aSelector];
-            
-            NSUInteger len = signature.numberOfArguments;
-            
-            if (len > 2)
-            {
-                id value = object;
-                va_list arguments;
-                va_start(arguments, object);
-                for (int i = 2; i < len; i++)
-                {
-                    [invocation setArgument:&value atIndex:i];
-                    if (value != nil)
-                    {
-                        value = va_arg(arguments, id);
-                    }
-                }
-                
-                va_end(arguments);
-            }
-            
-            [invocation invoke];
-            if (signature.methodReturnLength == 1)
-            {
-                [invocation getReturnValue:&anObject];
-            }
-        }
-    }
-    return anObject;
-}
+/**
+ *
+ *  performSelector 附带多参数
+ *
+ *  @param aSelector Selector
+ *  @param object    参数
+ *
+ *  @return         执行结果
+ */
+- (id)performSelector:(SEL)aSelector withMultiObjects:(id)object, ...;
+
+/**
+ *
+ *  performSelector 附带多参数
+ *
+ *  @param aSelector Selector
+ *  @param delay     延迟执行时间
+ *  @param object    参数
+ */
+- (void)performSelector:(SEL)aSelector afterDelay:(NSTimeInterval)delay withMultiObjects:(id)object, ...;
 
 @end
