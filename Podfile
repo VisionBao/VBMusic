@@ -8,3 +8,5 @@ pod 'MJRefresh'
 pod 'CocoaLumberjack'
 pod 'Reachability'
 pod 'ZipArchive'
+pod 'BFKit'
+
