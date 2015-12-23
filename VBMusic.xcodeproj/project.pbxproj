@@ -21,6 +21,7 @@
 		A28A4B2C1C29486000CB0B58 /* VBFileConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B2B1C29486000CB0B58 /* VBFileConfig.m */; };
 		A28A4B2F1C2A3D6300CB0B58 /* VBHttpUrlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B2E1C2A3D6300CB0B58 /* VBHttpUrlManager.m */; };
 		A28A4B361C2A425300CB0B58 /* VBHTTPErrorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B351C2A425300CB0B58 /* VBHTTPErrorManager.m */; };
+		A28A4B3A1C2A565000CB0B58 /* VBFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B391C2A565000CB0B58 /* VBFileManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		A28A4B331C2A420F00CB0B58 /* VBHTTPHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBHTTPHelper.h; sourceTree = "<group>"; };
 		A28A4B341C2A425300CB0B58 /* VBHTTPErrorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBHTTPErrorManager.h; sourceTree = "<group>"; };
 		A28A4B351C2A425300CB0B58 /* VBHTTPErrorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBHTTPErrorManager.m; sourceTree = "<group>"; };
+		A28A4B381C2A565000CB0B58 /* VBFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBFileManager.h; sourceTree = "<group>"; };
+		A28A4B391C2A565000CB0B58 /* VBFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBFileManager.m; sourceTree = "<group>"; };
 		A94F87C86D09779FFBC72C8C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F1D40C75E492E7E661FB20CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -190,6 +193,7 @@
 		A213B5731BFE2516004E464A /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				A28A4B371C2A562900CB0B58 /* FileManager */,
 				A22973951C130F3100C31F6A /* HTTPManager */,
 			);
 			path = Managers;
@@ -269,6 +273,15 @@
 			children = (
 			);
 			path = VBUI;
+			sourceTree = "<group>";
+		};
+		A28A4B371C2A562900CB0B58 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				A28A4B381C2A565000CB0B58 /* VBFileManager.h */,
+				A28A4B391C2A565000CB0B58 /* VBFileManager.m */,
+			);
+			path = FileManager;
 			sourceTree = "<group>";
 		};
 		F4350D99165B7AA9FADA043F /* Frameworks */ = {
@@ -468,6 +481,7 @@
 				A213B5411BFE222D004E464A /* main.m in Sources */,
 				A28A4B2C1C29486000CB0B58 /* VBFileConfig.m in Sources */,
 				A22973991C130F4900C31F6A /* VBHTTPManager.m in Sources */,
+				A28A4B3A1C2A565000CB0B58 /* VBFileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
