@@ -22,7 +22,12 @@
 		A28A4B2F1C2A3D6300CB0B58 /* VBHttpUrlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B2E1C2A3D6300CB0B58 /* VBHttpUrlManager.m */; };
 		A28A4B361C2A425300CB0B58 /* VBHTTPErrorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B351C2A425300CB0B58 /* VBHTTPErrorManager.m */; };
 		A28A4B3A1C2A565000CB0B58 /* VBFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B391C2A565000CB0B58 /* VBFileManager.m */; };
-		A28A4B3E1C2A8EF600CB0B58 /* VBDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B3D1C2A8EF600CB0B58 /* VBDBManager.m */; };
+		A28A4B411C2A967C00CB0B58 /* VBDBManagerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B401C2A967C00CB0B58 /* VBDBManagerFactory.m */; };
+		A28A4B4A1C2A9DE900CB0B58 /* VBConfigDBManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B471C2A9DE900CB0B58 /* VBConfigDBManager.mm */; };
+		A28A4B4B1C2A9DE900CB0B58 /* VBDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B491C2A9DE900CB0B58 /* VBDBManager.m */; };
+		A28A4B511C2A9E7F00CB0B58 /* VBFMEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B501C2A9E7F00CB0B58 /* VBFMEncryptDatabase.m */; };
+		A28A4B541C2A9EAC00CB0B58 /* VBFMEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B531C2A9EAC00CB0B58 /* VBFMEncryptDatabaseQueue.m */; };
+		A28A4B571C2A9EC900CB0B58 /* VBFMEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B561C2A9EC900CB0B58 /* VBFMEncryptHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,8 +82,20 @@
 		A28A4B351C2A425300CB0B58 /* VBHTTPErrorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBHTTPErrorManager.m; sourceTree = "<group>"; };
 		A28A4B381C2A565000CB0B58 /* VBFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBFileManager.h; sourceTree = "<group>"; };
 		A28A4B391C2A565000CB0B58 /* VBFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBFileManager.m; sourceTree = "<group>"; };
-		A28A4B3C1C2A8EF600CB0B58 /* VBDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBDBManager.h; sourceTree = "<group>"; };
-		A28A4B3D1C2A8EF600CB0B58 /* VBDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBDBManager.m; sourceTree = "<group>"; };
+		A28A4B3F1C2A967C00CB0B58 /* VBDBManagerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBDBManagerFactory.h; sourceTree = "<group>"; };
+		A28A4B401C2A967C00CB0B58 /* VBDBManagerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBDBManagerFactory.m; sourceTree = "<group>"; };
+		A28A4B461C2A9DE900CB0B58 /* VBConfigDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBConfigDBManager.h; sourceTree = "<group>"; };
+		A28A4B471C2A9DE900CB0B58 /* VBConfigDBManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VBConfigDBManager.mm; sourceTree = "<group>"; };
+		A28A4B481C2A9DE900CB0B58 /* VBDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBDBManager.h; sourceTree = "<group>"; };
+		A28A4B491C2A9DE900CB0B58 /* VBDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBDBManager.m; sourceTree = "<group>"; };
+		A28A4B4E1C2A9E5000CB0B58 /* VBFMDBEncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBFMDBEncrypt.h; sourceTree = "<group>"; };
+		A28A4B4F1C2A9E7F00CB0B58 /* VBFMEncryptDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBFMEncryptDatabase.h; sourceTree = "<group>"; };
+		A28A4B501C2A9E7F00CB0B58 /* VBFMEncryptDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBFMEncryptDatabase.m; sourceTree = "<group>"; };
+		A28A4B521C2A9EAC00CB0B58 /* VBFMEncryptDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBFMEncryptDatabaseQueue.h; sourceTree = "<group>"; };
+		A28A4B531C2A9EAC00CB0B58 /* VBFMEncryptDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBFMEncryptDatabaseQueue.m; sourceTree = "<group>"; };
+		A28A4B551C2A9EC900CB0B58 /* VBFMEncryptHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBFMEncryptHelper.h; sourceTree = "<group>"; };
+		A28A4B561C2A9EC900CB0B58 /* VBFMEncryptHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBFMEncryptHelper.m; sourceTree = "<group>"; };
+		A28A4B581C2A9FF500CB0B58 /* VBFMDBEncryptConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBFMDBEncryptConfig.h; sourceTree = "<group>"; };
 		A94F87C86D09779FFBC72C8C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F1D40C75E492E7E661FB20CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -291,10 +308,38 @@
 		A28A4B3B1C2A8E4B00CB0B58 /* DBManager */ = {
 			isa = PBXGroup;
 			children = (
-				A28A4B3C1C2A8EF600CB0B58 /* VBDBManager.h */,
-				A28A4B3D1C2A8EF600CB0B58 /* VBDBManager.m */,
+				A28A4B451C2A9DE900CB0B58 /* VBDBManager */,
+				A28A4B3F1C2A967C00CB0B58 /* VBDBManagerFactory.h */,
+				A28A4B401C2A967C00CB0B58 /* VBDBManagerFactory.m */,
 			);
 			path = DBManager;
+			sourceTree = "<group>";
+		};
+		A28A4B451C2A9DE900CB0B58 /* VBDBManager */ = {
+			isa = PBXGroup;
+			children = (
+				A28A4B4C1C2A9E2D00CB0B58 /* VBFMDBEncrypt */,
+				A28A4B461C2A9DE900CB0B58 /* VBConfigDBManager.h */,
+				A28A4B471C2A9DE900CB0B58 /* VBConfigDBManager.mm */,
+				A28A4B481C2A9DE900CB0B58 /* VBDBManager.h */,
+				A28A4B491C2A9DE900CB0B58 /* VBDBManager.m */,
+			);
+			path = VBDBManager;
+			sourceTree = "<group>";
+		};
+		A28A4B4C1C2A9E2D00CB0B58 /* VBFMDBEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				A28A4B4E1C2A9E5000CB0B58 /* VBFMDBEncrypt.h */,
+				A28A4B581C2A9FF500CB0B58 /* VBFMDBEncryptConfig.h */,
+				A28A4B4F1C2A9E7F00CB0B58 /* VBFMEncryptDatabase.h */,
+				A28A4B501C2A9E7F00CB0B58 /* VBFMEncryptDatabase.m */,
+				A28A4B521C2A9EAC00CB0B58 /* VBFMEncryptDatabaseQueue.h */,
+				A28A4B531C2A9EAC00CB0B58 /* VBFMEncryptDatabaseQueue.m */,
+				A28A4B551C2A9EC900CB0B58 /* VBFMEncryptHelper.h */,
+				A28A4B561C2A9EC900CB0B58 /* VBFMEncryptHelper.m */,
+			);
+			path = VBFMDBEncrypt;
 			sourceTree = "<group>";
 		};
 		F4350D99165B7AA9FADA043F /* Frameworks */ = {
@@ -485,17 +530,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A28A4B411C2A967C00CB0B58 /* VBDBManagerFactory.m in Sources */,
 				A239378C1BFECECB0013A3A2 /* VBObject.m in Sources */,
 				A23937921BFF20CB0013A3A2 /* VBMusicModel.m in Sources */,
-				A28A4B3E1C2A8EF600CB0B58 /* VBDBManager.m in Sources */,
 				A239378F1BFECF710013A3A2 /* VBLog.m in Sources */,
 				A28A4B361C2A425300CB0B58 /* VBHTTPErrorManager.m in Sources */,
+				A28A4B4B1C2A9DE900CB0B58 /* VBDBManager.m in Sources */,
 				A28A4B2F1C2A3D6300CB0B58 /* VBHttpUrlManager.m in Sources */,
 				A213B5441BFE222D004E464A /* AppDelegate.m in Sources */,
+				A28A4B4A1C2A9DE900CB0B58 /* VBConfigDBManager.mm in Sources */,
 				A213B5411BFE222D004E464A /* main.m in Sources */,
+				A28A4B541C2A9EAC00CB0B58 /* VBFMEncryptDatabaseQueue.m in Sources */,
 				A28A4B2C1C29486000CB0B58 /* VBFileConfig.m in Sources */,
 				A22973991C130F4900C31F6A /* VBHTTPManager.m in Sources */,
 				A28A4B3A1C2A565000CB0B58 /* VBFileManager.m in Sources */,
+				A28A4B571C2A9EC900CB0B58 /* VBFMEncryptHelper.m in Sources */,
+				A28A4B511C2A9E7F00CB0B58 /* VBFMEncryptDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
