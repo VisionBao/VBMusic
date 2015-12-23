@@ -22,6 +22,7 @@
 		A28A4B2F1C2A3D6300CB0B58 /* VBHttpUrlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B2E1C2A3D6300CB0B58 /* VBHttpUrlManager.m */; };
 		A28A4B361C2A425300CB0B58 /* VBHTTPErrorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B351C2A425300CB0B58 /* VBHTTPErrorManager.m */; };
 		A28A4B3A1C2A565000CB0B58 /* VBFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B391C2A565000CB0B58 /* VBFileManager.m */; };
+		A28A4B3E1C2A8EF600CB0B58 /* VBDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B3D1C2A8EF600CB0B58 /* VBDBManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		A28A4B351C2A425300CB0B58 /* VBHTTPErrorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBHTTPErrorManager.m; sourceTree = "<group>"; };
 		A28A4B381C2A565000CB0B58 /* VBFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBFileManager.h; sourceTree = "<group>"; };
 		A28A4B391C2A565000CB0B58 /* VBFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBFileManager.m; sourceTree = "<group>"; };
+		A28A4B3C1C2A8EF600CB0B58 /* VBDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBDBManager.h; sourceTree = "<group>"; };
+		A28A4B3D1C2A8EF600CB0B58 /* VBDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBDBManager.m; sourceTree = "<group>"; };
 		A94F87C86D09779FFBC72C8C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F1D40C75E492E7E661FB20CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,6 +196,7 @@
 		A213B5731BFE2516004E464A /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				A28A4B3B1C2A8E4B00CB0B58 /* DBManager */,
 				A28A4B371C2A562900CB0B58 /* FileManager */,
 				A22973951C130F3100C31F6A /* HTTPManager */,
 			);
@@ -282,6 +286,15 @@
 				A28A4B391C2A565000CB0B58 /* VBFileManager.m */,
 			);
 			path = FileManager;
+			sourceTree = "<group>";
+		};
+		A28A4B3B1C2A8E4B00CB0B58 /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				A28A4B3C1C2A8EF600CB0B58 /* VBDBManager.h */,
+				A28A4B3D1C2A8EF600CB0B58 /* VBDBManager.m */,
+			);
+			path = DBManager;
 			sourceTree = "<group>";
 		};
 		F4350D99165B7AA9FADA043F /* Frameworks */ = {
@@ -474,6 +487,7 @@
 			files = (
 				A239378C1BFECECB0013A3A2 /* VBObject.m in Sources */,
 				A23937921BFF20CB0013A3A2 /* VBMusicModel.m in Sources */,
+				A28A4B3E1C2A8EF600CB0B58 /* VBDBManager.m in Sources */,
 				A239378F1BFECF710013A3A2 /* VBLog.m in Sources */,
 				A28A4B361C2A425300CB0B58 /* VBHTTPErrorManager.m in Sources */,
 				A28A4B2F1C2A3D6300CB0B58 /* VBHttpUrlManager.m in Sources */,
