@@ -9,7 +9,7 @@
 #import "VBFileManager.h"
 #include <sys/param.h>
 #include <sys/mount.h>
-//#import "ZipArchive.h"
+#import "ZipArchive.h"
 
 
 @implementation VBFileManager
@@ -260,42 +260,43 @@
     return bret;
 }
 
-//#pragma mark - ZIP
-//+ (BOOL)ZIPCompress:(NSArray *)vecSrcFiles desFilePath:(NSString *)desFilePath {
-//    ZipArchive* zip=[[ZipArchive alloc] init];
-//    BOOL ret=[zip CreateZipFile2:desFilePath];
-//    
-//    if (!ret) {
-//        return NO;
-//    }
-//    
-//    for (NSString* file in vecSrcFiles) {
-//        NSString* strFileName = [VBFileManager getFileName:file];
-//        ret=[zip addFileToZip:file newname:strFileName];
-//        if (!ret) {
-//            return NO;
-//        }
-//    }
-//    ret = [zip CloseZipFile2];
-//    return ret;
-//}
-//
-//+ (BOOL)ZIPUnCompress:(NSString*)strSrcFile strUnZipDir:(NSString*)strUnZipDir {
-//    return [KSFileManager ZIPUnCompress:strSrcFile strUnZipDir:strUnZipDir arrayDesFiles:nil bOverWrite:YES];
-//}
-//
-//+ (BOOL)ZIPUnCompress:(NSString*)strSrcFile strUnZipDir:(NSString*)strUnZipDir arrayDesFiles:(NSMutableArray *)arrayDesFiles bOverWrite:(BOOL)bOverWrite {
-//    if (arrayDesFiles) {
-//        [arrayDesFiles removeAllObjects];
-//    }
-//    ZipArchive* zip=[[ZipArchive alloc] init];
-//    BOOL ret=[zip UnzipOpenFile:strSrcFile];
-//    if (!ret) {
-//        return FALSE;
-//    }
+#pragma mark - ZIP
++ (BOOL)ZIPCompress:(NSArray *)vecSrcFiles desFilePath:(NSString *)desFilePath {
+    ZipArchive* zip=[[ZipArchive alloc] init];
+    BOOL ret=[zip CreateZipFile2:desFilePath];
+    
+    if (!ret) {
+        return NO;
+    }
+    
+    for (NSString* file in vecSrcFiles) {
+        NSString* strFileName = [VBFileManager getFileName:file];
+        ret=[zip addFileToZip:file newname:strFileName];
+        if (!ret) {
+            return NO;
+        }
+    }
+    ret = [zip CloseZipFile2];
+    return ret;
+}
+
++ (BOOL)ZIPUnCompress:(NSString*)strSrcFile strUnZipDir:(NSString*)strUnZipDir {
+    return [VBFileManager ZIPUnCompress:strSrcFile strUnZipDir:strUnZipDir arrayDesFiles:nil bOverWrite:YES];
+}
+
++ (BOOL)ZIPUnCompress:(NSString*)strSrcFile strUnZipDir:(NSString*)strUnZipDir arrayDesFiles:(NSMutableArray *)arrayDesFiles bOverWrite:(BOOL)bOverWrite {
+    if (arrayDesFiles) {
+        [arrayDesFiles removeAllObjects];
+    }
+    ZipArchive* zip=[[ZipArchive alloc] init];
+    BOOL ret=[zip UnzipOpenFile:strSrcFile];
+    if (!ret) {
+        return FALSE;
+    }
+    ret = [zip UnzipFileTo:strUnZipDir overWrite:bOverWrite];
 //    ret=[zip UnzipFileTo:strUnZipDir overWrite:bOverWrite filepaths:arrayDesFiles];
-//    
-//    return ret;
-//}
+    
+    return ret;
+}
 
 @end

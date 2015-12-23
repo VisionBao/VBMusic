@@ -161,7 +161,7 @@ typedef NS_ENUM(NSUInteger, VBFilePathType) {
  *
  *  @param strSrcFile    解压的文件名
  *  @param strUnZipDir   解压到文件夹下
- *  @param arrayDesFiles 解压出来的文件名，nil就行
+ *  @param arrayDesFiles 解压出来的文件名，nil就行 (废弃)
  *  @param bOverWrite    是否写入，YES
  *
  *  @return 是否成功
