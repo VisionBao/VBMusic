@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "VBRootVC.h"
 
 @interface AppDelegate ()
 
@@ -26,7 +26,7 @@
 #endif
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    VBViewController * rootCtrl = [[VBViewController alloc]init];
+    VBRootVC * rootCtrl = [[VBRootVC alloc]init];
     self.window.rootViewController = rootCtrl;
     [self.window makeKeyAndVisible];
     

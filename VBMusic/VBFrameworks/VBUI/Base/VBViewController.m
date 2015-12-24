@@ -62,9 +62,10 @@
     
     if (!_rightPlayImageView) {
         _rightPlayImageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 12, 18, 19)];
-        _rightPlayImageView.animationDuration = 1;
+        _rightPlayImageView.animationDuration = .5;
         [_rightPlayImageView setImage:[UIImage imageNamed:@"main_playing_animation1"]];
-        _rightPlayImageView.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"main_playing_animation1"],
+        _rightPlayImageView.animationImages = [NSArray arrayWithObjects:
+                                               [UIImage imageNamed:@"main_playing_animation1"],
                                                [UIImage imageNamed:@"main_playing_animation2"],
                                                [UIImage imageNamed:@"main_playing_animation3"],
                                                [UIImage imageNamed:@"main_playing_animation4"],
@@ -77,7 +78,6 @@
     
     [_rightMenuButton addSubview:_rightPlayImageView];
     
-    //    [self.navBar addSubview:_rightMenuNavBtn];
     UIBarButtonItem *rightBtnItem = [[UIBarButtonItem alloc] initWithCustomView:_rightMenuButton];
     _navItem.rightBarButtonItem = rightBtnItem;
 }

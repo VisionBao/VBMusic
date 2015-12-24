@@ -269,6 +269,8 @@
 		A28A4E841C2BD15F00CB0B58 /* VBNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E831C2BD15F00CB0B58 /* VBNavigationBar.m */; };
 		A28A4E881C2BD38100CB0B58 /* VBColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E871C2BD38100CB0B58 /* VBColorManager.m */; };
 		A28A4E8B1C2BDB7800CB0B58 /* UIView+ITTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E8A1C2BDB7800CB0B58 /* UIView+ITTAdditions.m */; };
+		A28A4E8E1C2BE53A00CB0B58 /* VBRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E8D1C2BE53A00CB0B58 /* VBRootVC.m */; };
+		A28A4E921C2BE72E00CB0B58 /* VBPlayingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E911C2BE72E00CB0B58 /* VBPlayingVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -820,6 +822,10 @@
 		A28A4E871C2BD38100CB0B58 /* VBColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBColorManager.m; sourceTree = "<group>"; };
 		A28A4E891C2BDB7800CB0B58 /* UIView+ITTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ITTAdditions.h"; sourceTree = "<group>"; };
 		A28A4E8A1C2BDB7800CB0B58 /* UIView+ITTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ITTAdditions.m"; sourceTree = "<group>"; };
+		A28A4E8C1C2BE53A00CB0B58 /* VBRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBRootVC.h; sourceTree = "<group>"; };
+		A28A4E8D1C2BE53A00CB0B58 /* VBRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBRootVC.m; sourceTree = "<group>"; };
+		A28A4E901C2BE72E00CB0B58 /* VBPlayingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBPlayingVC.h; sourceTree = "<group>"; };
+		A28A4E911C2BE72E00CB0B58 /* VBPlayingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBPlayingVC.m; sourceTree = "<group>"; };
 		A94F87C86D09779FFBC72C8C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F1D40C75E492E7E661FB20CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -962,6 +968,7 @@
 		A213B5761BFE2516004E464A /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A28A4E8F1C2BE71800CB0B58 /* Player */,
 				A28A4E751C2BC2F300CB0B58 /* Root */,
 			);
 			path = UI;
@@ -2136,6 +2143,8 @@
 		A28A4E751C2BC2F300CB0B58 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				A28A4E8C1C2BE53A00CB0B58 /* VBRootVC.h */,
+				A28A4E8D1C2BE53A00CB0B58 /* VBRootVC.m */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -2147,6 +2156,15 @@
 				A28A4E871C2BD38100CB0B58 /* VBColorManager.m */,
 			);
 			path = ColorManager;
+			sourceTree = "<group>";
+		};
+		A28A4E8F1C2BE71800CB0B58 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				A28A4E901C2BE72E00CB0B58 /* VBPlayingVC.h */,
+				A28A4E911C2BE72E00CB0B58 /* VBPlayingVC.m */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 		F4350D99165B7AA9FADA043F /* Frameworks */ = {
@@ -2461,6 +2479,7 @@
 				A28A4D8E1C2AA8ED00CB0B58 /* NSDictionary+JSONString.m in Sources */,
 				A28A4D961C2AA8ED00CB0B58 /* NSHTTPCookieStorage+FreezeDry.m in Sources */,
 				A28A4E011C2AA8ED00CB0B58 /* UIImageView+BetterFace.m in Sources */,
+				A28A4E8E1C2BE53A00CB0B58 /* VBRootVC.m in Sources */,
 				A28A4E4B1C2AA8ED00CB0B58 /* UIWebView+Blocks.m in Sources */,
 				A28A4B2F1C2A3D6300CB0B58 /* VBHttpUrlManager.m in Sources */,
 				A213B5441BFE222D004E464A /* AppDelegate.m in Sources */,
@@ -2588,6 +2607,7 @@
 				A28A4E241C2AA8ED00CB0B58 /* UITableViewCell+NIB.m in Sources */,
 				A28A4DA91C2AA8ED00CB0B58 /* NSObject+Reflection.m in Sources */,
 				A28A4DF31C2AA8ED00CB0B58 /* UIImage+Blur.m in Sources */,
+				A28A4E921C2BE72E00CB0B58 /* VBPlayingVC.m in Sources */,
 				A28A4DDD1C2AA8ED00CB0B58 /* UIButton+BackgroundColor.m in Sources */,
 				A28A4DA41C2AA8ED00CB0B58 /* NSObject+Blocks.m in Sources */,
 				A28A4D9D1C2AA8ED00CB0B58 /* NSNumber+CGFloat.m in Sources */,
