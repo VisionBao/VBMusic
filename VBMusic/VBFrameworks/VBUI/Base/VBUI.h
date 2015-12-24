@@ -12,6 +12,7 @@
 #import "VBView.h"
 #import "VBViewController.h"
 #import "VBNavigationController.h"
+#import "VBNavigationBar.h"
 #import "VBTableView.h"
 #import "VBTableViewCell.h"
 #import "VBTabBarController.h"

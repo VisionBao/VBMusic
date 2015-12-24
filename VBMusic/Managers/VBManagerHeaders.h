@@ -16,5 +16,6 @@
 #import "VBHTTPHelper.h"
 #import "VBHttpUrlManager.h"
 #import "VBHTTPModels.h"
+#import "VBColorManager.h"
 
 #endif /* VBManagerHeaders_h */

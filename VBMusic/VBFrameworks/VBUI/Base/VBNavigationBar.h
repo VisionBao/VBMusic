@@ -1,14 +1,13 @@
 //
-//  VBNavigationController.m
+//  VBNavigationBar.h
 //  VBMusic
 //
 //  Created by Vision on 15/12/24.
 //  Copyright © 2015年 VisionBao. All rights reserved.
 //
 
-#import "VBNavigationController.h"
+#import <UIKit/UIKit.h>
 
-
-@implementation VBNavigationController
+@interface VBNavigationBar : UINavigationBar
 
 @end

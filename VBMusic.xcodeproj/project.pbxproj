@@ -266,6 +266,9 @@
 		A28A4E731C2BC1BB00CB0B58 /* VBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E721C2BC1BB00CB0B58 /* VBTableViewCell.m */; };
 		A28A4E791C2BC3F400CB0B58 /* VBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E781C2BC3F400CB0B58 /* VBTabBarController.m */; };
 		A28A4E7E1C2BC5AA00CB0B58 /* VBHTTPModels.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E7D1C2BC5AA00CB0B58 /* VBHTTPModels.m */; };
+		A28A4E841C2BD15F00CB0B58 /* VBNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E831C2BD15F00CB0B58 /* VBNavigationBar.m */; };
+		A28A4E881C2BD38100CB0B58 /* VBColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E871C2BD38100CB0B58 /* VBColorManager.m */; };
+		A28A4E8B1C2BDB7800CB0B58 /* UIView+ITTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E8A1C2BDB7800CB0B58 /* UIView+ITTAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -811,6 +814,12 @@
 		A28A4E7B1C2BC46800CB0B58 /* VBManagerHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBManagerHeaders.h; sourceTree = "<group>"; };
 		A28A4E7C1C2BC5AA00CB0B58 /* VBHTTPModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBHTTPModels.h; sourceTree = "<group>"; };
 		A28A4E7D1C2BC5AA00CB0B58 /* VBHTTPModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBHTTPModels.m; sourceTree = "<group>"; };
+		A28A4E821C2BD15F00CB0B58 /* VBNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBNavigationBar.h; sourceTree = "<group>"; };
+		A28A4E831C2BD15F00CB0B58 /* VBNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBNavigationBar.m; sourceTree = "<group>"; };
+		A28A4E861C2BD38100CB0B58 /* VBColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBColorManager.h; sourceTree = "<group>"; };
+		A28A4E871C2BD38100CB0B58 /* VBColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBColorManager.m; sourceTree = "<group>"; };
+		A28A4E891C2BDB7800CB0B58 /* UIView+ITTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ITTAdditions.h"; sourceTree = "<group>"; };
+		A28A4E8A1C2BDB7800CB0B58 /* UIView+ITTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ITTAdditions.m"; sourceTree = "<group>"; };
 		A94F87C86D09779FFBC72C8C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F1D40C75E492E7E661FB20CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -931,6 +940,7 @@
 			isa = PBXGroup;
 			children = (
 				A28A4E7B1C2BC46800CB0B58 /* VBManagerHeaders.h */,
+				A28A4E851C2BD35F00CB0B58 /* ColorManager */,
 				A28A4B591C2AA2BE00CB0B58 /* LocationManager */,
 				A28A4B3B1C2A8E4B00CB0B58 /* DBManager */,
 				A28A4B371C2A562900CB0B58 /* FileManager */,
@@ -1070,6 +1080,8 @@
 		A28A4B5F1C2AA8ED00CB0B58 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				A28A4E891C2BDB7800CB0B58 /* UIView+ITTAdditions.h */,
+				A28A4E8A1C2BDB7800CB0B58 /* UIView+ITTAdditions.m */,
 				A28A4B601C2AA8ED00CB0B58 /* CoreData */,
 				A28A4B751C2AA8ED00CB0B58 /* CoreLocation */,
 				A28A4B7C1C2AA8ED00CB0B58 /* Foundation */,
@@ -2109,6 +2121,8 @@
 				A28A4E691C2BC18700CB0B58 /* VBViewController.m */,
 				A28A4E6B1C2BC19C00CB0B58 /* VBNavigationController.h */,
 				A28A4E6C1C2BC19C00CB0B58 /* VBNavigationController.m */,
+				A28A4E821C2BD15F00CB0B58 /* VBNavigationBar.h */,
+				A28A4E831C2BD15F00CB0B58 /* VBNavigationBar.m */,
 				A28A4E6E1C2BC1AE00CB0B58 /* VBTableView.h */,
 				A28A4E6F1C2BC1AE00CB0B58 /* VBTableView.m */,
 				A28A4E711C2BC1BB00CB0B58 /* VBTableViewCell.h */,
@@ -2124,6 +2138,15 @@
 			children = (
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		A28A4E851C2BD35F00CB0B58 /* ColorManager */ = {
+			isa = PBXGroup;
+			children = (
+				A28A4E861C2BD38100CB0B58 /* VBColorManager.h */,
+				A28A4E871C2BD38100CB0B58 /* VBColorManager.m */,
+			);
+			path = ColorManager;
 			sourceTree = "<group>";
 		};
 		F4350D99165B7AA9FADA043F /* Frameworks */ = {
@@ -2447,12 +2470,14 @@
 				A28A4DFC1C2AA8ED00CB0B58 /* UIImage+RemoteSize.m in Sources */,
 				A28A4DAA1C2AA8ED00CB0B58 /* NSObject+Runtime.m in Sources */,
 				A28A4DBC1C2AA8ED00CB0B58 /* NSString+Trims.m in Sources */,
+				A28A4E8B1C2BDB7800CB0B58 /* UIView+ITTAdditions.m in Sources */,
 				A28A4DB51C2AA8ED00CB0B58 /* NSString+MIME.m in Sources */,
 				A28A4E6A1C2BC18700CB0B58 /* VBViewController.m in Sources */,
 				A28A4DDB1C2AA8ED00CB0B58 /* UIBezierPath+SVG.m in Sources */,
 				A28A4E081C2AA8ED00CB0B58 /* UILabel+ESAdjustableLabel.m in Sources */,
 				A28A4B4A1C2A9DE900CB0B58 /* VBConfigDBManager.mm in Sources */,
 				A28A4D7C1C2AA8ED00CB0B58 /* NSBundle+AppIcon.m in Sources */,
+				A28A4E881C2BD38100CB0B58 /* VBColorManager.m in Sources */,
 				A28A4D7D1C2AA8ED00CB0B58 /* NSData+APNSToken.m in Sources */,
 				A28A4E1A1C2AA8ED00CB0B58 /* UIScrollView+APParallaxHeader.m in Sources */,
 				A28A4DB31C2AA8ED00CB0B58 /* NSString+Hash.m in Sources */,
@@ -2520,6 +2545,7 @@
 				A28A4E361C2AA8ED00CB0B58 /* UIView+GestureCallback.m in Sources */,
 				A28A4D9E1C2AA8ED00CB0B58 /* NSNumber+RomanNumerals.m in Sources */,
 				A28A4DD61C2AA8ED00CB0B58 /* UIApplication+Permissions.m in Sources */,
+				A28A4E841C2BD15F00CB0B58 /* VBNavigationBar.m in Sources */,
 				A28A4E541C2AA8ED00CB0B58 /* UIWindow+Hierarchy.m in Sources */,
 				A28A4DD21C2AA8ED00CB0B58 /* UIAlertView+Block.m in Sources */,
 				A28A4E001C2AA8ED00CB0B58 /* UIImageView+Addition.m in Sources */,
