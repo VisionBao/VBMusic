@@ -26,8 +26,8 @@
 #endif
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    ViewController * rootCtrl = [[ViewController alloc]init];
-//    self.window.rootViewController = rootCtrl;
+    VBViewController * rootCtrl = [[VBViewController alloc]init];
+    self.window.rootViewController = rootCtrl;
     [self.window makeKeyAndVisible];
     
     return YES;

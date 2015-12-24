@@ -14,7 +14,7 @@
 
 @end
 
-@implementation NSObject (YObject)
+@implementation NSObject (VBObject)
 - (void)performSelector:(SEL)aSelector afterDelay:(NSTimeInterval)delay withMultiObjects:(id)object, ...
 {
     @autoreleasepool

@@ -259,6 +259,13 @@
 		A28A4E521C2AA8ED00CB0B58 /* UIWebView+TS_JavaScriptContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4D6A1C2AA8ED00CB0B58 /* UIWebView+TS_JavaScriptContext.m */; };
 		A28A4E531C2AA8ED00CB0B58 /* WebView+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4D6C1C2AA8ED00CB0B58 /* WebView+Debug.m */; };
 		A28A4E541C2AA8ED00CB0B58 /* UIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4D6F1C2AA8ED00CB0B58 /* UIWindow+Hierarchy.m */; };
+		A28A4E671C2BC16700CB0B58 /* VBView.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E661C2BC16700CB0B58 /* VBView.m */; };
+		A28A4E6A1C2BC18700CB0B58 /* VBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E691C2BC18700CB0B58 /* VBViewController.m */; };
+		A28A4E6D1C2BC19C00CB0B58 /* VBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E6C1C2BC19C00CB0B58 /* VBNavigationController.m */; };
+		A28A4E701C2BC1AE00CB0B58 /* VBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E6F1C2BC1AE00CB0B58 /* VBTableView.m */; };
+		A28A4E731C2BC1BB00CB0B58 /* VBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E721C2BC1BB00CB0B58 /* VBTableViewCell.m */; };
+		A28A4E791C2BC3F400CB0B58 /* VBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E781C2BC3F400CB0B58 /* VBTabBarController.m */; };
+		A28A4E7E1C2BC5AA00CB0B58 /* VBHTTPModels.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E7D1C2BC5AA00CB0B58 /* VBHTTPModels.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -293,7 +300,6 @@
 		A213B5601BFE222D004E464A /* VBMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VBMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A213B5641BFE222D004E464A /* VBMusicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBMusicUITests.m; sourceTree = "<group>"; };
 		A213B5661BFE222D004E464A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A213B5781BFE26D1004E464A /* ModelHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelHeaders.h; sourceTree = "<group>"; };
 		A213B5791BFE28FF004E464A /* VBMusic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VBMusic-Prefix.pch"; sourceTree = "<group>"; };
 		A213B57B1BFE2A8F004E464A /* CommonDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDef.h; sourceTree = "<group>"; };
 		A22973971C130F4900C31F6A /* VBHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBHTTPManager.h; sourceTree = "<group>"; };
@@ -787,6 +793,24 @@
 		A28A4D6C1C2AA8ED00CB0B58 /* WebView+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WebView+Debug.m"; sourceTree = "<group>"; };
 		A28A4D6E1C2AA8ED00CB0B58 /* UIWindow+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Hierarchy.h"; sourceTree = "<group>"; };
 		A28A4D6F1C2AA8ED00CB0B58 /* UIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Hierarchy.m"; sourceTree = "<group>"; };
+		A28A4E651C2BC16700CB0B58 /* VBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBView.h; sourceTree = "<group>"; };
+		A28A4E661C2BC16700CB0B58 /* VBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBView.m; sourceTree = "<group>"; };
+		A28A4E681C2BC18700CB0B58 /* VBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBViewController.h; sourceTree = "<group>"; };
+		A28A4E691C2BC18700CB0B58 /* VBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBViewController.m; sourceTree = "<group>"; };
+		A28A4E6B1C2BC19C00CB0B58 /* VBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBNavigationController.h; sourceTree = "<group>"; };
+		A28A4E6C1C2BC19C00CB0B58 /* VBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBNavigationController.m; sourceTree = "<group>"; };
+		A28A4E6E1C2BC1AE00CB0B58 /* VBTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTableView.h; sourceTree = "<group>"; };
+		A28A4E6F1C2BC1AE00CB0B58 /* VBTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTableView.m; sourceTree = "<group>"; };
+		A28A4E711C2BC1BB00CB0B58 /* VBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTableViewCell.h; sourceTree = "<group>"; };
+		A28A4E721C2BC1BB00CB0B58 /* VBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTableViewCell.m; sourceTree = "<group>"; };
+		A28A4E741C2BC21100CB0B58 /* VBUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBUI.h; sourceTree = "<group>"; };
+		A28A4E761C2BC36300CB0B58 /* VBFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBFoundation.h; sourceTree = "<group>"; };
+		A28A4E771C2BC3F400CB0B58 /* VBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTabBarController.h; sourceTree = "<group>"; };
+		A28A4E781C2BC3F400CB0B58 /* VBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTabBarController.m; sourceTree = "<group>"; };
+		A28A4E7A1C2BC44E00CB0B58 /* VBModelHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBModelHeaders.h; sourceTree = "<group>"; };
+		A28A4E7B1C2BC46800CB0B58 /* VBManagerHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBManagerHeaders.h; sourceTree = "<group>"; };
+		A28A4E7C1C2BC5AA00CB0B58 /* VBHTTPModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBHTTPModels.h; sourceTree = "<group>"; };
+		A28A4E7D1C2BC5AA00CB0B58 /* VBHTTPModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBHTTPModels.m; sourceTree = "<group>"; };
 		A94F87C86D09779FFBC72C8C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F1D40C75E492E7E661FB20CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -906,6 +930,7 @@
 		A213B5731BFE2516004E464A /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				A28A4E7B1C2BC46800CB0B58 /* VBManagerHeaders.h */,
 				A28A4B591C2AA2BE00CB0B58 /* LocationManager */,
 				A28A4B3B1C2A8E4B00CB0B58 /* DBManager */,
 				A28A4B371C2A562900CB0B58 /* FileManager */,
@@ -917,7 +942,7 @@
 		A213B5751BFE2516004E464A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A213B5781BFE26D1004E464A /* ModelHeaders.h */,
+				A28A4E7A1C2BC44E00CB0B58 /* VBModelHeaders.h */,
 				A23937901BFF20CB0013A3A2 /* VBMusicModel.h */,
 				A23937911BFF20CB0013A3A2 /* VBMusicModel.m */,
 			);
@@ -927,16 +952,9 @@
 		A213B5761BFE2516004E464A /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				A213B5771BFE2516004E464A /* Base */,
+				A28A4E751C2BC2F300CB0B58 /* Root */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		A213B5771BFE2516004E464A /* Base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		A22973951C130F3100C31F6A /* HTTPManager */ = {
@@ -945,6 +963,8 @@
 				A22973961C130F3100C31F6A /* VBHTTPManager */,
 				A28A4B2D1C2A3D6300CB0B58 /* VBHttpUrlManager.h */,
 				A28A4B2E1C2A3D6300CB0B58 /* VBHttpUrlManager.m */,
+				A28A4E7C1C2BC5AA00CB0B58 /* VBHTTPModels.h */,
+				A28A4E7D1C2BC5AA00CB0B58 /* VBHTTPModels.m */,
 			);
 			path = HTTPManager;
 			sourceTree = "<group>";
@@ -975,6 +995,7 @@
 		A23937881BFECE790013A3A2 /* VBFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				A28A4E761C2BC36300CB0B58 /* VBFoundation.h */,
 				A239378A1BFECECB0013A3A2 /* VBObject.h */,
 				A239378B1BFECECB0013A3A2 /* VBObject.m */,
 				A239378D1BFECF710013A3A2 /* VBLog.h */,
@@ -986,6 +1007,7 @@
 		A23937891BFECE790013A3A2 /* VBUI */ = {
 			isa = PBXGroup;
 			children = (
+				A28A4E5E1C2BC11600CB0B58 /* Base */,
 			);
 			path = VBUI;
 			sourceTree = "<group>";
@@ -2077,6 +2099,33 @@
 			path = UIWindow;
 			sourceTree = "<group>";
 		};
+		A28A4E5E1C2BC11600CB0B58 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A28A4E741C2BC21100CB0B58 /* VBUI.h */,
+				A28A4E651C2BC16700CB0B58 /* VBView.h */,
+				A28A4E661C2BC16700CB0B58 /* VBView.m */,
+				A28A4E681C2BC18700CB0B58 /* VBViewController.h */,
+				A28A4E691C2BC18700CB0B58 /* VBViewController.m */,
+				A28A4E6B1C2BC19C00CB0B58 /* VBNavigationController.h */,
+				A28A4E6C1C2BC19C00CB0B58 /* VBNavigationController.m */,
+				A28A4E6E1C2BC1AE00CB0B58 /* VBTableView.h */,
+				A28A4E6F1C2BC1AE00CB0B58 /* VBTableView.m */,
+				A28A4E711C2BC1BB00CB0B58 /* VBTableViewCell.h */,
+				A28A4E721C2BC1BB00CB0B58 /* VBTableViewCell.m */,
+				A28A4E771C2BC3F400CB0B58 /* VBTabBarController.h */,
+				A28A4E781C2BC3F400CB0B58 /* VBTabBarController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A28A4E751C2BC2F300CB0B58 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		F4350D99165B7AA9FADA043F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2304,6 +2353,7 @@
 				A28A4DDF1C2AA8ED00CB0B58 /* UIButton+CountDown.m in Sources */,
 				A28A4D941C2AA8ED00CB0B58 /* NSFileHandle+readLine.m in Sources */,
 				A28A4E0C1C2AA8ED00CB0B58 /* UINavigationController+BATransitions.m in Sources */,
+				A28A4E7E1C2BC5AA00CB0B58 /* VBHTTPModels.m in Sources */,
 				A28A4D911C2AA8ED00CB0B58 /* NSDictionary+URL.m in Sources */,
 				A28A4DA11C2AA8ED00CB0B58 /* NSObject+AppInfo.m in Sources */,
 				A28A4D9C1C2AA8ED00CB0B58 /* NSDecimalNumber+Extensions.m in Sources */,
@@ -2346,6 +2396,7 @@
 				A28A4D8A1C2AA8ED00CB0B58 /* NSDate+Utilities.m in Sources */,
 				A28A4DB91C2AA8ED00CB0B58 /* NSString+Ruby.m in Sources */,
 				A28A4DEC1C2AA8ED00CB0B58 /* UIDevice+PasscodeStatus.m in Sources */,
+				A28A4E6D1C2BC19C00CB0B58 /* VBNavigationController.m in Sources */,
 				A28A4DC81C2AA8ED00CB0B58 /* NSUserDefaults+SafeAccess.m in Sources */,
 				A28A4E041C2AA8ED00CB0B58 /* UIImageView+Letters.m in Sources */,
 				A28A4E521C2AA8ED00CB0B58 /* UIWebView+TS_JavaScriptContext.m in Sources */,
@@ -2367,6 +2418,7 @@
 				A28A4D7B1C2AA8ED00CB0B58 /* NSArray+SafeAccess.m in Sources */,
 				A28A4DE31C2AA8ED00CB0B58 /* UIButton+TouchAreaInsets.m in Sources */,
 				A28A4E051C2AA8ED00CB0B58 /* UIImageView+Reflect.m in Sources */,
+				A28A4E791C2BC3F400CB0B58 /* VBTabBarController.m in Sources */,
 				A28A4D721C2AA8ED00CB0B58 /* NSManagedObject+Extensions.m in Sources */,
 				A28A4B4B1C2A9DE900CB0B58 /* VBDBManager.m in Sources */,
 				A28A4DA31C2AA8ED00CB0B58 /* NSObject+AutoCoding.m in Sources */,
@@ -2379,7 +2431,9 @@
 				A28A4DCA1C2AA8ED00CB0B58 /* MKMapView+MoveLogo.m in Sources */,
 				A28A4DE91C2AA8ED00CB0B58 /* UIControl+ActionBlocks.m in Sources */,
 				A28A4DBE1C2AA8ED00CB0B58 /* NSString+UUID.m in Sources */,
+				A28A4E701C2BC1AE00CB0B58 /* VBTableView.m in Sources */,
 				A28A4E281C2AA8ED00CB0B58 /* UITextField+Select.m in Sources */,
+				A28A4E731C2BC1BB00CB0B58 /* VBTableViewCell.m in Sources */,
 				A28A4D841C2AA8ED00CB0B58 /* NSDate+CupertinoYankee.m in Sources */,
 				A28A4D8E1C2AA8ED00CB0B58 /* NSDictionary+JSONString.m in Sources */,
 				A28A4D961C2AA8ED00CB0B58 /* NSHTTPCookieStorage+FreezeDry.m in Sources */,
@@ -2394,6 +2448,7 @@
 				A28A4DAA1C2AA8ED00CB0B58 /* NSObject+Runtime.m in Sources */,
 				A28A4DBC1C2AA8ED00CB0B58 /* NSString+Trims.m in Sources */,
 				A28A4DB51C2AA8ED00CB0B58 /* NSString+MIME.m in Sources */,
+				A28A4E6A1C2BC18700CB0B58 /* VBViewController.m in Sources */,
 				A28A4DDB1C2AA8ED00CB0B58 /* UIBezierPath+SVG.m in Sources */,
 				A28A4E081C2AA8ED00CB0B58 /* UILabel+ESAdjustableLabel.m in Sources */,
 				A28A4B4A1C2A9DE900CB0B58 /* VBConfigDBManager.mm in Sources */,
@@ -2432,6 +2487,7 @@
 				A28A4D931C2AA8ED00CB0B58 /* NSException+Trace.m in Sources */,
 				A28A4D8F1C2AA8ED00CB0B58 /* NSDictionary+Merge.m in Sources */,
 				A28A4E2B1C2AA8ED00CB0B58 /* UITextView+PlaceHolder.m in Sources */,
+				A28A4E671C2BC16700CB0B58 /* VBView.m in Sources */,
 				A28A4E121C2AA8ED00CB0B58 /* UINavigationItem+Lock.m in Sources */,
 				A28A4E351C2AA8ED00CB0B58 /* UIView+Frame.m in Sources */,
 				A28A4DDA1C2AA8ED00CB0B58 /* UIBezierPath+LxThroughPointsBezier.m in Sources */,
