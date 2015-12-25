@@ -10,4 +10,12 @@
 
 @implementation VBPlayingVC
 
+- (void)viewDidLoad{
+    [super viewDidLoad];
+    
+    
+}
+- (void)dealloc{
+
+}
 @end

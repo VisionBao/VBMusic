@@ -51,9 +51,9 @@
 // 安全释放C++对象
 #define SAFE_DELETE(p) { delete (p); (p) = NULL; }
 
-
-#import "VBFoundation.h"
 #import "VBUI.h"
+#import "VBFoundation.h"
+#import "VBCategories.h"
 
 
 #import "VBModelHeaders.h"

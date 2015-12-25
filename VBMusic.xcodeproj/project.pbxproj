@@ -271,6 +271,7 @@
 		A28A4E8B1C2BDB7800CB0B58 /* UIView+ITTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E8A1C2BDB7800CB0B58 /* UIView+ITTAdditions.m */; };
 		A28A4E8E1C2BE53A00CB0B58 /* VBRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E8D1C2BE53A00CB0B58 /* VBRootVC.m */; };
 		A28A4E921C2BE72E00CB0B58 /* VBPlayingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E911C2BE72E00CB0B58 /* VBPlayingVC.m */; };
+		A28A4E9A1C2D119300CB0B58 /* UIView+VBMotionEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E991C2D119300CB0B58 /* UIView+VBMotionEffect.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -826,6 +827,9 @@
 		A28A4E8D1C2BE53A00CB0B58 /* VBRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBRootVC.m; sourceTree = "<group>"; };
 		A28A4E901C2BE72E00CB0B58 /* VBPlayingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBPlayingVC.h; sourceTree = "<group>"; };
 		A28A4E911C2BE72E00CB0B58 /* VBPlayingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBPlayingVC.m; sourceTree = "<group>"; };
+		A28A4E971C2D114300CB0B58 /* VBCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBCategories.h; sourceTree = "<group>"; };
+		A28A4E981C2D119300CB0B58 /* UIView+VBMotionEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VBMotionEffect.h"; sourceTree = "<group>"; };
+		A28A4E991C2D119300CB0B58 /* UIView+VBMotionEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VBMotionEffect.m"; sourceTree = "<group>"; };
 		A94F87C86D09779FFBC72C8C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F1D40C75E492E7E661FB20CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -946,6 +950,7 @@
 			isa = PBXGroup;
 			children = (
 				A28A4E7B1C2BC46800CB0B58 /* VBManagerHeaders.h */,
+				A28A4E9B1C2D27DA00CB0B58 /* AudioHelper */,
 				A28A4E851C2BD35F00CB0B58 /* ColorManager */,
 				A28A4B591C2AA2BE00CB0B58 /* LocationManager */,
 				A28A4B3B1C2A8E4B00CB0B58 /* DBManager */,
@@ -1003,8 +1008,9 @@
 		A23937871BFECE790013A3A2 /* VBFrameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A23937881BFECE790013A3A2 /* VBFoundation */,
 				A23937891BFECE790013A3A2 /* VBUI */,
+				A23937881BFECE790013A3A2 /* VBFoundation */,
+				A28A4E961C2D111700CB0B58 /* VBCategories */,
 			);
 			path = VBFrameworks;
 			sourceTree = "<group>";
@@ -2167,6 +2173,31 @@
 			path = Player;
 			sourceTree = "<group>";
 		};
+		A28A4E961C2D111700CB0B58 /* VBCategories */ = {
+			isa = PBXGroup;
+			children = (
+				A28A4E971C2D114300CB0B58 /* VBCategories.h */,
+				A28A4E981C2D119300CB0B58 /* UIView+VBMotionEffect.h */,
+				A28A4E991C2D119300CB0B58 /* UIView+VBMotionEffect.m */,
+			);
+			path = VBCategories;
+			sourceTree = "<group>";
+		};
+		A28A4E9B1C2D27DA00CB0B58 /* AudioHelper */ = {
+			isa = PBXGroup;
+			children = (
+				A28A4E9C1C2D27DA00CB0B58 /* VBAudioHelper */,
+			);
+			path = AudioHelper;
+			sourceTree = "<group>";
+		};
+		A28A4E9C1C2D27DA00CB0B58 /* VBAudioHelper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VBAudioHelper;
+			sourceTree = "<group>";
+		};
 		F4350D99165B7AA9FADA043F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2366,6 +2397,7 @@
 				A28A4DB61C2AA8ED00CB0B58 /* NSString+Pinyin.m in Sources */,
 				A239378C1BFECECB0013A3A2 /* VBObject.m in Sources */,
 				A28A4E3C1C2AA8ED00CB0B58 /* UIView+Toast.m in Sources */,
+				A28A4E9A1C2D119300CB0B58 /* UIView+VBMotionEffect.m in Sources */,
 				A28A4E2C1C2AA8ED00CB0B58 /* UITextView+Select.m in Sources */,
 				A28A4D801C2AA8ED00CB0B58 /* NSData+Gzip.m in Sources */,
 				A28A4D951C2AA8ED00CB0B58 /* NSFileManager+Paths.m in Sources */,

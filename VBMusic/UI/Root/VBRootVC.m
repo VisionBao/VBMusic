@@ -7,6 +7,7 @@
 //
 
 #import "VBRootVC.h"
+#import "VBPlayingVC.h"
 
 @implementation VBRootVC
 
@@ -16,7 +17,14 @@
     self.title = @"fuck";
     [self addRightPlayButton];
     [self addBackUpBtn];
-
+    UIView *fuckView = [[UIView alloc]initWithFrame:CGRectMake(50, 100, 100, 100)];
+    fuckView.backgroundColor = [UIColor yellowColor];
+    [fuckView vb_registerMotionEffectWithdepth:40];
+    [self.view addSubview:fuckView];
+    self.view.backgroundColor = [UIColor yellowColor];
 }
-
+- (void)rightMenuBtnClick{
+    VBPlayingVC *playingVC = [[VBPlayingVC alloc]init];
+    [self presentViewController:playingVC animated:YES completion:nil];
+}
 @end
