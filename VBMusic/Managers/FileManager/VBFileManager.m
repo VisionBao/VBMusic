@@ -153,11 +153,6 @@
     return [[NSFileManager defaultManager] createDirectoryAtPath:strDir withIntermediateDirectories:YES attributes:nil error:nil];
 }
 
-+ (BOOL)saveFile:(NSString *)fileName filePath:(NSString *)filePath{
-    
-    return YES;
-}
-
 + (BOOL)deleteFile:(NSString *)filepath {
     if (!filepath || [filepath length]==0) {
         return NO;

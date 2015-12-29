@@ -45,7 +45,8 @@
     
     NSString *musicPath = [VBFileManager getPathWithType:VBFilePATH_LOCALMUSIC];
     VBLogInfo(@"%@",musicPath);
-    [VBHTTPManager downloadRequest:songUrl filePath:[NSString stringWithFormat:@"%@",musicPath] successAndProgress:^(int64_t bytesWritten, int64_t totalBytesWritten) {
+    
+    [[VBHTTPManager defaultManager] downloadRequest:songUrl filePath:[NSString stringWithFormat:@"%@",musicPath] successAndProgress:^(int64_t bytesWritten, int64_t totalBytesWritten) {
         NSLog(@"- %lld - %lld",bytesWritten, totalBytesWritten);
     } complete:^(id dataObj, NSError *error) {
         

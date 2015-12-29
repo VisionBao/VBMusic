@@ -9,6 +9,11 @@
 #import "VBHTTPManager.h"
 #import "VBFileConfig.h"
 
+@interface VBHTTPManager ()
+@property (nonatomic, strong)AFHTTPSessionManager *sessionManager;
+@property (nonatomic, strong)AFNetworkReachabilityManager *reachabilityManager;
+@end
+
 @implementation VBHTTPManager
 
 + (id)defaultManager{
@@ -51,7 +56,7 @@
 /**
  GET请求
  */
-+ (void)getRequest:(NSString *)url params:(NSDictionary *)params success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler{
+- (void)getRequest:(NSString *)url params:(NSDictionary *)params success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler{
     if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
         successHandler(nil);
         failureHandler(nil);
@@ -65,17 +70,13 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failureHandler(error);
     }];
-//    [[[VBHTTPManager defaultManager] session] GET:url parameters:params success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-//        successHandler(responseObject);
-//    } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
-//        failureHandler(error);
-//    }];
+
 }
 
 /**
  POST请求
  */
-+ (void)postRequest:(NSString *)url params:(NSDictionary *)params success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler{
+- (void)postRequest:(NSString *)url params:(NSDictionary *)params success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler{
     if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
         successHandler(nil);
         failureHandler(nil);
@@ -93,7 +94,7 @@
 /**
  PUT请求
  */
-+ (void)putRequest:(NSString *)url params:(NSDictionary *)params success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler{
+- (void)putRequest:(NSString *)url params:(NSDictionary *)params success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler{
     if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
         successHandler(nil);
         failureHandler(nil);
@@ -109,7 +110,7 @@
 /**
  DELETE请求
  */
-+ (void)deleteRequest:(NSString *)url params:(NSDictionary *)params success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler{
+- (void)deleteRequest:(NSString *)url params:(NSDictionary *)params success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler{
     if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
         successHandler(nil);
         failureHandler(nil);
@@ -125,7 +126,7 @@
 /**
  下载文件，监听下载进度
  */
-+ (void)downloadRequest:(NSString *)url filePath:(NSString *)filePath successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler{
+- (void)downloadRequest:(NSString *)url filePath:(NSString *)filePath successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler{
     if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
         progressHandler(0, 0);
         completionHandler(nil, nil);
@@ -152,7 +153,7 @@
 /**
  文件上传
  */
-+ (void)updateRequest:(NSString *)url params:(NSDictionary *)params fileConfig:(VBFileConfig *)fileConfig success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler{
+- (void)updateRequest:(NSString *)url params:(NSDictionary *)params fileConfig:(VBFileConfig *)fileConfig success:(requestSuccessBlock)successHandler failure:(requestFailureBlock)failureHandler{
     if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
         successHandler(nil);
         failureHandler(nil);
@@ -170,7 +171,7 @@
 /**
  文件上传，监听上传进度
  */
-+ (void)updateRequest:(NSString *)url params:(NSDictionary *)params fileConfig:(VBFileConfig *)fileConfig successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler{
+- (void)updateRequest:(NSString *)url params:(NSDictionary *)params fileConfig:(VBFileConfig *)fileConfig successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler{
     if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
         progressHandler(0, 0);
         completionHandler(nil, nil);
