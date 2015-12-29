@@ -64,8 +64,7 @@ typedef void (^progressBlock)(int64_t bytesWritten, int64_t totalBytesWritten);
 /**
  下载文件，监听下载进度
  */
-+ (void)downloadRequest:(NSString *)url successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler;
-
++ (void)downloadRequest:(NSString *)url filePath:(NSString *)filePath successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler;
 /**
  文件上传
  */

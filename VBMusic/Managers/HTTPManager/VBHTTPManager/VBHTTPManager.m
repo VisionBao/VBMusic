@@ -125,20 +125,29 @@
 /**
  下载文件，监听下载进度
  */
-+ (void)downloadRequest:(NSString *)url successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler{
++ (void)downloadRequest:(NSString *)url filePath:(NSString *)filePath successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler{
     if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
         progressHandler(0, 0);
         completionHandler(nil, nil);
         return;
     }
-    [[[VBHTTPManager defaultManager] sessionManager] GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-        progressHandler(downloadProgress.completedUnitCount, downloadProgress.totalUnitCount);
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        completionHandler(responseObject, nil);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        completionHandler(nil, error);
-    }];
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     
+    NSURL *URL = [NSURL URLWithString:url];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    
+    NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
+         progressHandler(downloadProgress.completedUnitCount, downloadProgress.totalUnitCount);
+    } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+        NSURL *downloadUrl = [NSURL fileURLWithPath:filePath];
+        NSURL *finalUrl =[downloadUrl URLByAppendingPathComponent:@"fuck.mp3"];
+        return finalUrl;
+    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+        completionHandler(filePath, error);
+    }];
+    [downloadTask resume];
+
 }
 /**
  文件上传

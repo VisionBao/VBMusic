@@ -53,6 +53,15 @@ typedef NS_ENUM(NSUInteger, VBFilePathType) {
  *  @return 是否成功
  */
 + (BOOL)makeDir:(NSString *)strDir;
+/**
+ *  保存文件
+ *
+ *  @param fileName   文件名
+ *  @param filepath   文件夹路径
+ *
+ *  @return 是否成功
+ */
++ (BOOL)saveFile:(NSString *)fileName filePath:(NSString *)filePath;
 
 /**
  *  删除文件
