@@ -23,7 +23,7 @@ typedef void (^requestFailureBlock) (NSError *error);
 /**
  请求响应block
  */
-typedef void (^responseBlock)(id dataObj, NSError *error);
+typedef void (^responseBlock)(id dataObj,NSURL *filePath, NSError *error);
 
 /**
  监听进度响应block

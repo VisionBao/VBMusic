@@ -129,7 +129,7 @@
 - (void)downloadRequest:(NSString *)url filePath:(NSString *)filePath successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler{
     if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
         progressHandler(0, 0);
-        completionHandler(nil, nil);
+        completionHandler(nil, nil, nil);
         return;
     }
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -142,10 +142,10 @@
          progressHandler(downloadProgress.completedUnitCount, downloadProgress.totalUnitCount);
     } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
         NSURL *downloadUrl = [NSURL fileURLWithPath:filePath];
-        NSURL *finalUrl =[downloadUrl URLByAppendingPathComponent:@"fuck.mp3"];
+        NSURL *finalUrl =[downloadUrl URLByAppendingPathComponent:[response suggestedFilename]];
         return finalUrl;
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
-        completionHandler(filePath, error);
+        completionHandler(response, filePath, error);
     }];
     [downloadTask resume];
 
@@ -174,7 +174,7 @@
 - (void)updateRequest:(NSString *)url params:(NSDictionary *)params fileConfig:(VBFileConfig *)fileConfig successAndProgress:(progressBlock)progressHandler complete:(responseBlock)completionHandler{
     if (![[VBHTTPManager defaultManager] checkNetworkStatus]) {
         progressHandler(0, 0);
-        completionHandler(nil, nil);
+        completionHandler(nil, nil, nil);
         return;
     }
     [[[VBHTTPManager defaultManager] sessionManager] POST:url parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
@@ -182,9 +182,9 @@
     } progress:^(NSProgress * _Nonnull uploadProgress) {
         progressHandler(uploadProgress.completedUnitCount, uploadProgress.totalUnitCount);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        completionHandler(responseObject, nil);
+        completionHandler(responseObject, nil, nil);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        completionHandler(nil, error);
+        completionHandler(nil, nil, error);
     }];
 }
 @end

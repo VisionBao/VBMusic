@@ -273,6 +273,7 @@
 		A28A4E921C2BE72E00CB0B58 /* VBPlayingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E911C2BE72E00CB0B58 /* VBPlayingVC.m */; };
 		A28A4E9A1C2D119300CB0B58 /* UIView+VBMotionEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E991C2D119300CB0B58 /* UIView+VBMotionEffect.m */; };
 		A28A4EA11C2D3D9F00CB0B58 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A28A4EA01C2D3D9F00CB0B58 /* AVFoundation.framework */; };
+		A298E02D1C32891300B718B5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A298E02C1C32891300B718B5 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -832,6 +833,7 @@
 		A28A4E981C2D119300CB0B58 /* UIView+VBMotionEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VBMotionEffect.h"; sourceTree = "<group>"; };
 		A28A4E991C2D119300CB0B58 /* UIView+VBMotionEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VBMotionEffect.m"; sourceTree = "<group>"; };
 		A28A4EA01C2D3D9F00CB0B58 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A298E02C1C32891300B718B5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		A94F87C86D09779FFBC72C8C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F1D40C75E492E7E661FB20CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -841,6 +843,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A298E02D1C32891300B718B5 /* MediaPlayer.framework in Frameworks */,
 				A28A4EA11C2D3D9F00CB0B58 /* AVFoundation.framework in Frameworks */,
 				A28A4B5E1C2AA2F300CB0B58 /* CoreLocation.framework in Frameworks */,
 				6ABD734F167B92ADF9CA72AC /* libPods.a in Frameworks */,
@@ -2204,6 +2207,7 @@
 		F4350D99165B7AA9FADA043F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A298E02C1C32891300B718B5 /* MediaPlayer.framework */,
 				A28A4EA01C2D3D9F00CB0B58 /* AVFoundation.framework */,
 				A28A4B5D1C2AA2F200CB0B58 /* CoreLocation.framework */,
 				F1D40C75E492E7E661FB20CA /* libPods.a */,
