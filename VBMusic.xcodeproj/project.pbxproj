@@ -18,10 +18,10 @@
 		A239378C1BFECECB0013A3A2 /* VBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A239378B1BFECECB0013A3A2 /* VBObject.m */; };
 		A239378F1BFECF710013A3A2 /* VBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = A239378E1BFECF710013A3A2 /* VBLog.m */; };
 		A23937921BFF20CB0013A3A2 /* VBMusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A23937911BFF20CB0013A3A2 /* VBMusicModel.m */; };
+		A2558A911C91D8E8004C3336 /* VBFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2558A901C91D8E8004C3336 /* VBFileManager.m */; };
 		A28A4B2C1C29486000CB0B58 /* VBFileConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B2B1C29486000CB0B58 /* VBFileConfig.m */; };
 		A28A4B2F1C2A3D6300CB0B58 /* VBHttpUrlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B2E1C2A3D6300CB0B58 /* VBHttpUrlManager.m */; };
 		A28A4B361C2A425300CB0B58 /* VBHTTPErrorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B351C2A425300CB0B58 /* VBHTTPErrorManager.m */; };
-		A28A4B3A1C2A565000CB0B58 /* VBFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B391C2A565000CB0B58 /* VBFileManager.m */; };
 		A28A4B411C2A967C00CB0B58 /* VBDBManagerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B401C2A967C00CB0B58 /* VBDBManagerFactory.m */; };
 		A28A4B4A1C2A9DE900CB0B58 /* VBConfigDBManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B471C2A9DE900CB0B58 /* VBConfigDBManager.mm */; };
 		A28A4B4B1C2A9DE900CB0B58 /* VBDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4B491C2A9DE900CB0B58 /* VBDBManager.m */; };
@@ -318,6 +318,8 @@
 		A239378E1BFECF710013A3A2 /* VBLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBLog.m; sourceTree = "<group>"; };
 		A23937901BFF20CB0013A3A2 /* VBMusicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBMusicModel.h; sourceTree = "<group>"; };
 		A23937911BFF20CB0013A3A2 /* VBMusicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBMusicModel.m; sourceTree = "<group>"; };
+		A2558A8F1C91D8E8004C3336 /* VBFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBFileManager.h; sourceTree = "<group>"; };
+		A2558A901C91D8E8004C3336 /* VBFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBFileManager.m; sourceTree = "<group>"; };
 		A28A4B2A1C29486000CB0B58 /* VBFileConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBFileConfig.h; sourceTree = "<group>"; };
 		A28A4B2B1C29486000CB0B58 /* VBFileConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBFileConfig.m; sourceTree = "<group>"; };
 		A28A4B2D1C2A3D6300CB0B58 /* VBHttpUrlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBHttpUrlManager.h; sourceTree = "<group>"; };
@@ -325,8 +327,6 @@
 		A28A4B331C2A420F00CB0B58 /* VBHTTPHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBHTTPHelper.h; sourceTree = "<group>"; };
 		A28A4B341C2A425300CB0B58 /* VBHTTPErrorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBHTTPErrorManager.h; sourceTree = "<group>"; };
 		A28A4B351C2A425300CB0B58 /* VBHTTPErrorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBHTTPErrorManager.m; sourceTree = "<group>"; };
-		A28A4B381C2A565000CB0B58 /* VBFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBFileManager.h; sourceTree = "<group>"; };
-		A28A4B391C2A565000CB0B58 /* VBFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBFileManager.m; sourceTree = "<group>"; };
 		A28A4B3F1C2A967C00CB0B58 /* VBDBManagerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBDBManagerFactory.h; sourceTree = "<group>"; };
 		A28A4B401C2A967C00CB0B58 /* VBDBManagerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBDBManagerFactory.m; sourceTree = "<group>"; };
 		A28A4B461C2A9DE900CB0B58 /* VBConfigDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBConfigDBManager.h; sourceTree = "<group>"; };
@@ -1044,8 +1044,8 @@
 		A28A4B371C2A562900CB0B58 /* FileManager */ = {
 			isa = PBXGroup;
 			children = (
-				A28A4B381C2A565000CB0B58 /* VBFileManager.h */,
-				A28A4B391C2A565000CB0B58 /* VBFileManager.m */,
+				A2558A8F1C91D8E8004C3336 /* VBFileManager.h */,
+				A2558A901C91D8E8004C3336 /* VBFileManager.m */,
 			);
 			path = FileManager;
 			sourceTree = "<group>";
@@ -2622,7 +2622,6 @@
 				A28A4E3E1C2AA8ED00CB0B58 /* UIView+Visuals.m in Sources */,
 				A28A4E501C2AA8ED00CB0B58 /* UIWebView+Style.m in Sources */,
 				A28A4DFE1C2AA8ED00CB0B58 /* UIImage+RoundedCorner.m in Sources */,
-				A28A4B3A1C2A565000CB0B58 /* VBFileManager.m in Sources */,
 				A28A4DC41C2AA8ED00CB0B58 /* NSURLConnection+SelfSigned.m in Sources */,
 				A28A4E161C2AA8ED00CB0B58 /* UIResponder+FirstResponder.m in Sources */,
 				A28A4DCD1C2AA8ED00CB0B58 /* CAAnimation+EasingEquations.m in Sources */,
@@ -2632,6 +2631,7 @@
 				A28A4D791C2AA8ED00CB0B58 /* CLLocationManager+Blocks.m in Sources */,
 				A28A4DA01C2AA8ED00CB0B58 /* NSObject+AddProperty.m in Sources */,
 				A28A4DA71C2AA8ED00CB0B58 /* NSObject+KVOBlocks.m in Sources */,
+				A2558A911C91D8E8004C3336 /* VBFileManager.m in Sources */,
 				A28A4DCF1C2AA8ED00CB0B58 /* CAMediaTimingFunction+AdditionalEquations.m in Sources */,
 				A28A4D861C2AA8ED00CB0B58 /* NSDate+Formatter.m in Sources */,
 				A28A4B5C1C2AA2CB00CB0B58 /* VBLocationManager.m in Sources */,
