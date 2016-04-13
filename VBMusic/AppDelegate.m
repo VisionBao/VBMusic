@@ -30,6 +30,16 @@
     self.window.rootViewController = rootCtrl;
     [self.window makeKeyAndVisible];
     
+    
+    NSString *urlStr = @"http://app.ngzdt.cn/ngzdt/v1/alterUserName/11";
+    NSDictionary *params = @{@"userName" : @"我草"};
+    [[VBHTTPManager defaultManager]postRequest:urlStr params:params success:^(id responseObj) {
+        
+    } failure:^(NSError *error) {
+        
+    }];
+    
+    
     return YES;
 }
 

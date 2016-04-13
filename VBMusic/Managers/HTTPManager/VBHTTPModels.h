@@ -10,4 +10,6 @@
 
 @interface VBHTTPModels : NSObject
 
++ (void)fuck;
+
 @end

@@ -82,13 +82,25 @@
         failureHandler(nil);
         return;
     }
-    [[[VBHTTPManager defaultManager] sessionManager] GET:url parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+    
+    [[[VBHTTPManager defaultManager] sessionManager] POST:url parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         successHandler(responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failureHandler(error);
     }];
+    
+    
+    
+    
+//    [[[VBHTTPManager defaultManager] sessionManager] GET:url parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+//        
+//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        successHandler(responseObject);
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        failureHandler(error);
+//    }];
 }
 
 /**
