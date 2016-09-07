@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6ABD734F167B92ADF9CA72AC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D40C75E492E7E661FB20CA /* libPods.a */; };
+		9A59B8C0D05D52EB7E12902C /* libPods-VBMusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C4D5981D9B5BFC787E24AE /* libPods-VBMusic.a */; };
 		A213B5411BFE222D004E464A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A213B5401BFE222D004E464A /* main.m */; };
 		A213B5441BFE222D004E464A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A213B5431BFE222D004E464A /* AppDelegate.m */; };
 		A213B54C1BFE222D004E464A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A213B54B1BFE222D004E464A /* Assets.xcassets */; };
@@ -269,11 +269,11 @@
 		A28A4E841C2BD15F00CB0B58 /* VBNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E831C2BD15F00CB0B58 /* VBNavigationBar.m */; };
 		A28A4E881C2BD38100CB0B58 /* VBColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E871C2BD38100CB0B58 /* VBColorManager.m */; };
 		A28A4E8B1C2BDB7800CB0B58 /* UIView+ITTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E8A1C2BDB7800CB0B58 /* UIView+ITTAdditions.m */; };
-		A28A4E8E1C2BE53A00CB0B58 /* VBRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E8D1C2BE53A00CB0B58 /* VBRootVC.m */; };
-		A28A4E921C2BE72E00CB0B58 /* VBPlayingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E911C2BE72E00CB0B58 /* VBPlayingVC.m */; };
 		A28A4E9A1C2D119300CB0B58 /* UIView+VBMotionEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A28A4E991C2D119300CB0B58 /* UIView+VBMotionEffect.m */; };
 		A28A4EA11C2D3D9F00CB0B58 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A28A4EA01C2D3D9F00CB0B58 /* AVFoundation.framework */; };
 		A298E02D1C32891300B718B5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A298E02C1C32891300B718B5 /* MediaPlayer.framework */; };
+		A2B8A7DB1D7D719D0018757A /* VBRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B8A7DA1D7D719D0018757A /* VBRootViewController.m */; };
+		A2B8A7DE1D7D71AF0018757A /* VBPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B8A7DD1D7D71AF0018757A /* VBPlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -294,7 +294,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A7C196A9E0C9498DFB945DD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A213B53C1BFE222D004E464A /* VBMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VBMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A213B5401BFE222D004E464A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A213B5421BFE222D004E464A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -825,17 +824,18 @@
 		A28A4E871C2BD38100CB0B58 /* VBColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBColorManager.m; sourceTree = "<group>"; };
 		A28A4E891C2BDB7800CB0B58 /* UIView+ITTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ITTAdditions.h"; sourceTree = "<group>"; };
 		A28A4E8A1C2BDB7800CB0B58 /* UIView+ITTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ITTAdditions.m"; sourceTree = "<group>"; };
-		A28A4E8C1C2BE53A00CB0B58 /* VBRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBRootVC.h; sourceTree = "<group>"; };
-		A28A4E8D1C2BE53A00CB0B58 /* VBRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBRootVC.m; sourceTree = "<group>"; };
-		A28A4E901C2BE72E00CB0B58 /* VBPlayingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBPlayingVC.h; sourceTree = "<group>"; };
-		A28A4E911C2BE72E00CB0B58 /* VBPlayingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBPlayingVC.m; sourceTree = "<group>"; };
 		A28A4E971C2D114300CB0B58 /* VBCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBCategories.h; sourceTree = "<group>"; };
 		A28A4E981C2D119300CB0B58 /* UIView+VBMotionEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VBMotionEffect.h"; sourceTree = "<group>"; };
 		A28A4E991C2D119300CB0B58 /* UIView+VBMotionEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VBMotionEffect.m"; sourceTree = "<group>"; };
 		A28A4EA01C2D3D9F00CB0B58 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A298E02C1C32891300B718B5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		A94F87C86D09779FFBC72C8C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		F1D40C75E492E7E661FB20CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2B8A7D91D7D719D0018757A /* VBRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBRootViewController.h; sourceTree = "<group>"; };
+		A2B8A7DA1D7D719D0018757A /* VBRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBRootViewController.m; sourceTree = "<group>"; };
+		A2B8A7DC1D7D71AF0018757A /* VBPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBPlayerViewController.h; sourceTree = "<group>"; };
+		A2B8A7DD1D7D71AF0018757A /* VBPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBPlayerViewController.m; sourceTree = "<group>"; };
+		D7FC4C7CAA5FB0CD74B44544 /* Pods-VBMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VBMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-VBMusic/Pods-VBMusic.release.xcconfig"; sourceTree = "<group>"; };
+		E4C4D5981D9B5BFC787E24AE /* libPods-VBMusic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VBMusic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F199DFA59ED6D3E38B6B5977 /* Pods-VBMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VBMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VBMusic/Pods-VBMusic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -846,7 +846,7 @@
 				A298E02D1C32891300B718B5 /* MediaPlayer.framework in Frameworks */,
 				A28A4EA11C2D3D9F00CB0B58 /* AVFoundation.framework in Frameworks */,
 				A28A4B5E1C2AA2F300CB0B58 /* CoreLocation.framework in Frameworks */,
-				6ABD734F167B92ADF9CA72AC /* libPods.a in Frameworks */,
+				9A59B8C0D05D52EB7E12902C /* libPods-VBMusic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -867,11 +867,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B47A290543517EDA46A3D4E /* Pods */ = {
+		77E6921BCE9AE3B06F36A68C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0A7C196A9E0C9498DFB945DD /* Pods.debug.xcconfig */,
-				A94F87C86D09779FFBC72C8C /* Pods.release.xcconfig */,
+				F199DFA59ED6D3E38B6B5977 /* Pods-VBMusic.debug.xcconfig */,
+				D7FC4C7CAA5FB0CD74B44544 /* Pods-VBMusic.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -883,8 +883,8 @@
 				A213B5581BFE222D004E464A /* VBMusicTests */,
 				A213B5631BFE222D004E464A /* VBMusicUITests */,
 				A213B53D1BFE222D004E464A /* Products */,
-				2B47A290543517EDA46A3D4E /* Pods */,
 				F4350D99165B7AA9FADA043F /* Frameworks */,
+				77E6921BCE9AE3B06F36A68C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2155,8 +2155,8 @@
 		A28A4E751C2BC2F300CB0B58 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				A28A4E8C1C2BE53A00CB0B58 /* VBRootVC.h */,
-				A28A4E8D1C2BE53A00CB0B58 /* VBRootVC.m */,
+				A2B8A7D91D7D719D0018757A /* VBRootViewController.h */,
+				A2B8A7DA1D7D719D0018757A /* VBRootViewController.m */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -2173,8 +2173,8 @@
 		A28A4E8F1C2BE71800CB0B58 /* Player */ = {
 			isa = PBXGroup;
 			children = (
-				A28A4E901C2BE72E00CB0B58 /* VBPlayingVC.h */,
-				A28A4E911C2BE72E00CB0B58 /* VBPlayingVC.m */,
+				A2B8A7DC1D7D71AF0018757A /* VBPlayerViewController.h */,
+				A2B8A7DD1D7D71AF0018757A /* VBPlayerViewController.m */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -2210,7 +2210,7 @@
 				A298E02C1C32891300B718B5 /* MediaPlayer.framework */,
 				A28A4EA01C2D3D9F00CB0B58 /* AVFoundation.framework */,
 				A28A4B5D1C2AA2F200CB0B58 /* CoreLocation.framework */,
-				F1D40C75E492E7E661FB20CA /* libPods.a */,
+				E4C4D5981D9B5BFC787E24AE /* libPods-VBMusic.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2222,12 +2222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A213B5691BFE222D004E464A /* Build configuration list for PBXNativeTarget "VBMusic" */;
 			buildPhases = (
-				499C8A4B2462E7C75D20F737 /* Check Pods Manifest.lock */,
+				02EE52E8CC87B927D0460F2C /* [CP] Check Pods Manifest.lock */,
 				A213B5381BFE222D004E464A /* Sources */,
 				A213B5391BFE222D004E464A /* Frameworks */,
 				A213B53A1BFE222D004E464A /* Resources */,
-				B72DB0848A9F89D86A9DB4F1 /* Embed Pods Frameworks */,
-				4BE5F1D5A9E0328178C7A61D /* Copy Pods Resources */,
+				9C457B4A97D28524A2850194 /* [CP] Embed Pods Frameworks */,
+				7F566D4E8AF17558D8E40A46 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2344,14 +2344,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		499C8A4B2462E7C75D20F737 /* Check Pods Manifest.lock */ = {
+		02EE52E8CC87B927D0460F2C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2359,34 +2359,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		4BE5F1D5A9E0328178C7A61D /* Copy Pods Resources */ = {
+		7F566D4E8AF17558D8E40A46 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VBMusic/Pods-VBMusic-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B72DB0848A9F89D86A9DB4F1 /* Embed Pods Frameworks */ = {
+		9C457B4A97D28524A2850194 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VBMusic/Pods-VBMusic-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2483,6 +2483,7 @@
 				A28A4E521C2AA8ED00CB0B58 /* UIWebView+TS_JavaScriptContext.m in Sources */,
 				A28A4DF01C2AA8ED00CB0B58 /* UIImage+Alpha.m in Sources */,
 				A28A4D901C2AA8ED00CB0B58 /* NSDictionary+SafeAccess.m in Sources */,
+				A2B8A7DE1D7D71AF0018757A /* VBPlayerViewController.m in Sources */,
 				A28A4D711C2AA8ED00CB0B58 /* NSManagedObject+DictionaryExport.m in Sources */,
 				A28A4DF21C2AA8ED00CB0B58 /* UIImage+BetterFace.m in Sources */,
 				A28A4D871C2AA8ED00CB0B58 /* NSDate+InternetDateTime.m in Sources */,
@@ -2519,7 +2520,6 @@
 				A28A4D8E1C2AA8ED00CB0B58 /* NSDictionary+JSONString.m in Sources */,
 				A28A4D961C2AA8ED00CB0B58 /* NSHTTPCookieStorage+FreezeDry.m in Sources */,
 				A28A4E011C2AA8ED00CB0B58 /* UIImageView+BetterFace.m in Sources */,
-				A28A4E8E1C2BE53A00CB0B58 /* VBRootVC.m in Sources */,
 				A28A4E4B1C2AA8ED00CB0B58 /* UIWebView+Blocks.m in Sources */,
 				A28A4B2F1C2A3D6300CB0B58 /* VBHttpUrlManager.m in Sources */,
 				A213B5441BFE222D004E464A /* AppDelegate.m in Sources */,
@@ -2636,6 +2636,7 @@
 				A28A4D861C2AA8ED00CB0B58 /* NSDate+Formatter.m in Sources */,
 				A28A4B5C1C2AA2CB00CB0B58 /* VBLocationManager.m in Sources */,
 				A28A4E3F1C2AA8ED00CB0B58 /* UIViewController+BackButtonHandler.m in Sources */,
+				A2B8A7DB1D7D719D0018757A /* VBRootViewController.m in Sources */,
 				A28A4D781C2AA8ED00CB0B58 /* CLLocation+CH1903.m in Sources */,
 				A28A4E4D1C2AA8ED00CB0B58 /* UIWebView+JS.m in Sources */,
 				A28A4DEE1C2AA8ED00CB0B58 /* UIFont+WDCustomLoader.m in Sources */,
@@ -2647,7 +2648,6 @@
 				A28A4E241C2AA8ED00CB0B58 /* UITableViewCell+NIB.m in Sources */,
 				A28A4DA91C2AA8ED00CB0B58 /* NSObject+Reflection.m in Sources */,
 				A28A4DF31C2AA8ED00CB0B58 /* UIImage+Blur.m in Sources */,
-				A28A4E921C2BE72E00CB0B58 /* VBPlayingVC.m in Sources */,
 				A28A4DDD1C2AA8ED00CB0B58 /* UIButton+BackgroundColor.m in Sources */,
 				A28A4DA41C2AA8ED00CB0B58 /* NSObject+Blocks.m in Sources */,
 				A28A4D9D1C2AA8ED00CB0B58 /* NSNumber+CGFloat.m in Sources */,
@@ -2784,7 +2784,7 @@
 		};
 		A213B56A1BFE222D004E464A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A7C196A9E0C9498DFB945DD /* Pods.debug.xcconfig */;
+			baseConfigurationReference = F199DFA59ED6D3E38B6B5977 /* Pods-VBMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2798,7 +2798,7 @@
 		};
 		A213B56B1BFE222D004E464A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A94F87C86D09779FFBC72C8C /* Pods.release.xcconfig */;
+			baseConfigurationReference = D7FC4C7CAA5FB0CD74B44544 /* Pods-VBMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

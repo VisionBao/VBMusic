@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "VBRootVC.h"
+#import "VBRootViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,28 +19,35 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //     Override point for customization after application launch.
 
+    // Basic setup
+    [self basicSetup];
+    
+    // Showing the App
+    [self makeWindowVisible:launchOptions];
+    
+    return YES;
+}
+
+#pragma mark - Basic setup
+
+- (void)basicSetup {
+    
 #ifdef DEBUG
     [VBLog setLevel:VBLogLevelVerbose];
 #else
     [VBLog setLevel:VBLogLevelOff];
 #endif
+}
+
+#pragma mark - Make window visible
+
+- (void)makeWindowVisible:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    VBRootVC * rootCtrl = [[VBRootVC alloc]init];
-    self.window.rootViewController = rootCtrl;
+    VBRootViewController * rootCtrl = [[VBRootViewController alloc]init];
+    UINavigationController *navCtrl = [[UINavigationController alloc] initWithRootViewController:rootCtrl];
+    self.window.rootViewController = navCtrl;
     [self.window makeKeyAndVisible];
-    
-    
-    NSString *urlStr = @"http://app.ngzdt.cn/ngzdt/v1/alterUserName/11";
-    NSDictionary *params = @{@"userName" : @"我草"};
-    [[VBHTTPManager defaultManager]postRequest:urlStr params:params success:^(id responseObj) {
-        
-    } failure:^(NSError *error) {
-        
-    }];
-    
-    
-    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
