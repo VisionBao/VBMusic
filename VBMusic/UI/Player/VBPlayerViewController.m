@@ -28,8 +28,10 @@
     
     [self.view addSubview:_backImageView];
     
+    [_backImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(0, 0, 0, 0));
     
-    
+    }];
     
 }
 
